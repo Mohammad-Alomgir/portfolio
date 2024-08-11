@@ -28,19 +28,19 @@ const Skills = () => {
           onboard process."
             />
             <Service
-              icon="./public/assets/images/serviceIcon3.png"
+              icon="/assets/images/serviceIcon3.png"
               title="javascript developement"
               des=" Take your client onboard seamlessly by our amazing tool of digital
           onboard process."
             />
             <Service
-              icon="./public/assets/images/serviceIcon5.png"
+              icon="/assets/images/serviceIcon5.png"
               title="SEO friendly Code"
               des=" Take your client onboard seamlessly by our amazing tool of digital
           onboard process."
             />
             <Service
-              icon="./public/assets/images/serviceIcon4.png"
+              icon="/assets/images/serviceIcon4.png"
               title="Email Signature design && developemet"
               des=" Take your client onboard seamlessly by our amazing tool of digital
           onboard process."
