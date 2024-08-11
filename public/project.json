@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "img": "/assets/images/project1.jpg",
+    "title": "React Ecommerce App",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reiciendis eum repellendus dolores repellat? Assumenda reprehenderit impedit quo quia iusto repellendus voluptatem quam nemo quod minima maxime atque, veniam quidem!",
+    "category": "website",
+    "usedTecnology": [
+      {
+        "img": "/assets/images/serviceIcon1.png"
+      },
+      {
+        "img": "/assets/images/serviceIcon1.png"
+      },
+      {
+        "img": "/assets/images/serviceIcon1.png"
+      },
+      {
+        "img": "/assets/images/serviceIcon1.png"
+      },
+      {
+        "img": "/assets/images/serviceIcon1.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "img": "/assets/images/project2.jpg",
+    "title": "Agency Landing page",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reiciendis eum repellendus dolores repellat? Assumenda reprehenderit impedit quo quia iusto repellendus voluptatem quam nemo quod minima maxime atque, veniam quidem!",
+    "category": "webapplication",
+    "usedTecnology": [
+      {
+        "img": "/assets/images/serviceIcon1.png"
+      },
+      {
+        "img": "/assets/images/serviceIcon1.png"
+      },
+      {
+        "img": "/assets/images/serviceIcon1.png"
+      },
+      {
+        "img": "/assets/images/serviceIcon1.png"
+      },
+      {
+        "img": "/assets/images/serviceIcon1.png"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "emailsignature",
+    "emailSignatures": [
+      {"img": "/assets/images/signature1.jpg",
+       "className": "horizontal"},
+      {"img": "/assets/images/signature2.jpeg" ,
+      "className": "vertical"},
+      {"img": "/assets/images/signature3.jpeg" ,
+      "className": "vertical"},
+      {"img": "/assets/images/signature4.jpg" ,
+      "className": "horizontal"},
+      {"img": "/assets/images/signature5.jpg" ,
+      "className": "big"},
+      {"img": "/assets/images/signature6.png" ,
+      "className": "horizontal"},
+      {"img": "/assets/images/signature7.jpeg" ,
+      "className": "vertical"},
+      {"img": "/assets/images/signature8.jpeg" ,
+      "className": "vertical"},
+      {"img": "/assets/images/signature9.jpeg" ,
+      "className": "vertical"},
+      {"img": "/assets/images/signature10.jpeg" ,
+      "className": "vertical"},
+      {"img": "/assets/images/signature11.jpeg" ,
+      "className": "vertical"},
+      {"img": "/assets/images/signature12.jpg" ,
+      "className": "horizontal"},
+      {"img": "/assets/images/signature13.jpg" ,
+      "className": "horizontal"}
+    ]
+  }
+]
