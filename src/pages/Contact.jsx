@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Button from "../components/Button";
 import emailjs from "emailjs-com";
 import { useState } from "react";
-import { FaLocationDot } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 import { FaBlenderPhone } from "react-icons/fa";
 import { MdAttachEmail } from "react-icons/md";
 import { toast, ToastContainer } from 'react-toastify';

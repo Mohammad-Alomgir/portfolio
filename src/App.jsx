@@ -6,12 +6,13 @@ import { ThemeProvider } from "styled-components";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AllProject from "./components/AllProject";
 import GoToTop from "./components/GoToTop";
-import Loading from "./components/Loading"; // Import the Loading component
+// import Loading from "./components/Loading"; // Import the Loading component
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS CSS
 
 function App() {
-  const [loading, setLoading] = useState(true); // Add loading state
+  // const [loading, setLoading] = useState(true);
+  // Add loading state
 
   useEffect(() => {
     AOS.init({
@@ -19,17 +20,17 @@ function App() {
       once: false, // Whether animation should happen only once
     });
   }, []);
-  useEffect(() => {
-    // Wait until the whole page is fully loaded
-    const handleLoad = () => {
-      console.log("page fully loaded");
-      setLoading(false)
-    };
-    window.addEventListener("load", handleLoad);
+  // useEffect(() => {
+  //   // Wait until the whole page is fully loaded
+  //   const handleLoad = () => {
+  //     console.log("page fully loaded");
+  //     setLoading(false)
+  //   };
+  //   window.addEventListener("load", handleLoad);
 
-    // Clean up the event listener
-    return () => window.removeEventListener("load", handleLoad);
-  }, []);
+  //   // Clean up the event listener
+  //   return () => window.removeEventListener("load", handleLoad);
+  // }, []);
 
   const theme = {
     colors: {
@@ -63,14 +64,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      {loading ? (
-        <Loading /> // Show loading animation while loading is true
-      ) : (
-        <>
-          <GoToTop />
-          <RouterProvider router={router} />
-        </>
-      )}
+      <GoToTop />
+      <RouterProvider router={router} />
     </ThemeProvider>
   );
 }
