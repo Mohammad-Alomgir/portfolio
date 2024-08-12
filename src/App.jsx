@@ -7,10 +7,18 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AllProject from "./components/AllProject";
 import GoToTop from "./components/GoToTop";
 import Loading from "./components/Loading"; // Import the Loading component
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the AOS CSS
 
 function App() {
   const [loading, setLoading] = useState(true); // Add loading state
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration (optional)
+      once: false, // Whether animation should happen only once
+    });
+  }, []);
   useEffect(() => {
     // Wait until the whole page is fully loaded
     const handleLoad = () => {
@@ -32,6 +40,7 @@ function App() {
       textSecoundary: "#7127BA",
       headingColorPrimary: "#4D4D4D",
       servicesBackground: "#693B93",
+      footerBackground: #200063;
       gradient:
         "linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%)",
       shadow:

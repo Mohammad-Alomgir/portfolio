@@ -1,46 +1,19 @@
-// src/Footer.js
-import React from "react";
-import { Box, Typography, Container, Link } from "@mui/material";
+import React from 'react'
+import Header from './Header'
 
 const Footer = () => {
   return (
-    <Box
-      component="footer"
-      sx={{
-        py: 3,
-        px: 2,
-        mt: "auto",
-        color: "white",
-        backgroundColor: "black",
-      }}
-    >
-      <Container
-        maxWidth="sm"
-        sx={{
-          color: "white",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <Typography variant="body1">
-         Well
-        </Typography>
-        <Typography
-          variant="body2"
-          color="text.secondary"
-          sx={{ color: "black", background: "gray", py: 2, px: 3 }}
-        >
-          {"© "}
-          <Link color="inherit" href="https://your-website.com/">
-            Copyright Alomgir
-          </Link>{" "}
-          {new Date().getFullYear()}
-          {"."}
-        </Typography>
-      </Container>
-    </Box>
-  );
-};
+    <div className='footer-area'>
+      <div className="container">
+        <div className="footer-contents">
+          <div className="footer-logo"></div>
+          <Header />
+          <div className="footer-logo"></div>
+          <div className="footer-logo"></div>
+        </div>
+      </div>
+    </div>
+  )
+}
 
-export default Footer;
+export default Footer

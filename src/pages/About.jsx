@@ -1,8 +1,16 @@
-import React from "react";
+import {useEffect} from "react";
 import Button from "../components/Button";
 import styled from "styled-components";
+// import AOS from "aos";
+// import "aos/dist/aos.css"; // Import the AOS CSS
 
 const About = () => {
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000, // Animation duration (optional)
+  //     once: true, // Whether animation should happen only once
+  //   });
+  // }, []);
   return (
     <AboutWrapper id="about">
       <div className="container about-container">
@@ -13,7 +21,7 @@ const About = () => {
           alt=""
         />
         <div className="about-contents flex justify-between items-center">
-          <div className="about-body">
+          <div className="about-body" data-aos="fade-right">
             <h1>
               <span className="element">Let’s get know</span> about me closer
             </h1>
@@ -27,7 +35,7 @@ const About = () => {
             </p>
             <Button>Discover more about me</Button>
           </div>
-          <div className="about-image-section">
+          <div className="about-image-section " data-aos="fade-left">
             <div className="image-wrapper">
               <img
                loading="lazy"

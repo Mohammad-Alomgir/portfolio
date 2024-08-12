@@ -1,22 +1,75 @@
 import styled from "styled-components";
 import Button from "../components/Button";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
+import { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
+import { FaBlenderPhone } from "react-icons/fa";
+import { MdAttachEmail } from "react-icons/md";
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    to_name: "",
+    from_name: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState({});
+
+  const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
+  const validateForm = () => {
+    let formErrors = {};
+    if (!formData.to_name) formErrors.to_name = "Name is required";
+    if (!formData.from_name) formErrors.from_name = "Email is required";
+    else if (!validateEmail(formData.from_name))
+      formErrors.from_name = "Email is invalid";
+    if (!formData.message) formErrors.message = "Message is required";
+
+    setErrors(formErrors);
+    return Object.keys(formErrors).length === 0;
+  };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_061e0ge', 'template_hcgfh2a', e.target, 'ONAsDHAWzxwEPFofI')
-      .then((result) => {
-          console.log(result.text);
-          alert('Message sent successfully!');
-      }, (error) => {
-          console.log(error.text);
-          alert('Failed to send message. Please try again.');
-      });
+    if (validateForm()) {
+      emailjs
+        .sendForm(
+          "service_061e0ge",
+          "template_hcgfh2a",
+          e.target,
+          "ONAsDHAWzxwEPFofI"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            alert("Message sent successfully!");
+          },
+          (error) => {
+            console.log(error.text);
+            alert("Failed to send message. Please try again.");
+          }
+        );
 
-    e.target.reset();
+      e.target.reset();
+      setFormData({
+        to_name: "",
+        from_name: "",
+        message: "",
+      });
+      setErrors({});
+    }
   };
+
   return (
     <ContactWrapper id="contact">
       <div className="container">
@@ -31,19 +84,35 @@ const Contact = () => {
           <div className="contact-layout">
             <form onSubmit={sendEmail}>
               <div className="input-field">
-                <input type="text" placeholder="Enter your name" name="to_name"/>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  name="to_name"
+                  value={formData.to_name}
+                  onChange={handleChange}
+                />
+                {errors.to_name && <p className="error">{errors.to_name}</p>}
               </div>
               <div className="input-field">
-                <input type="email" placeholder="Enter your email" name="from_name"/>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  name="from_name"
+                  value={formData.from_name}
+                  onChange={handleChange}
+                />
+                {errors.from_name && <p className="error">{errors.from_name}</p>}
               </div>
               <div className="input-field">
                 <textarea
                   name="message"
-                  id=""
                   placeholder="Enter your message"
                   cols="30"
                   rows="10"
+                  value={formData.message}
+                  onChange={handleChange}
                 ></textarea>
+                {errors.message && <p className="error">{errors.message}</p>}
                 <Button className="contact-button">Submit</Button>
               </div>
             </form>
@@ -54,7 +123,7 @@ const Contact = () => {
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.1900928827645!2d89.51575741042987!3d24.720353350758913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fdaf8fbd0f1153%3A0xac8a402eae23204f!2sKantanagor%20(Charpara)%20Mosque!5e0!3m2!1sen!2sbd!4v1723262326691!5m2!1sen!2sbd"
                     width="600"
                     height="450"
-                    style={{border: "0"}}
+                    style={{ border: "0" }}
                     allowFullScreen=""
                     loading="lazy"
                   ></iframe>
@@ -63,19 +132,25 @@ const Contact = () => {
                   <ul>
                     <li>
                       <div>
-                        <i><FaLocationDot /></i>
+                        <i>
+                          <MdAttachEmail />
+                        </i>
                       </div>
                       <span>expectantcoder@gmail.com</span>
                     </li>
                     <li>
                       <div>
-                        <i>L</i>
+                        <i>
+                          <FaBlenderPhone />
+                        </i>
                       </div>
                       <span>+8801310395359</span>
                     </li>
                     <li>
                       <div>
-                        <i>L</i>
+                        <i>
+                          <FaLocationDot />
+                        </i>
                       </div>
                       <span> Rajshahi Sahar » 6200</span>
                     </li>
@@ -89,6 +164,7 @@ const Contact = () => {
     </ContactWrapper>
   );
 };
+
 const ContactWrapper = styled.section`
   padding: 3rem 0;
   .contact-heading {
@@ -106,8 +182,6 @@ const ContactWrapper = styled.section`
   .contact-layout {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    /* max-height: 31rem; */
     height: 31rem;
     gap: 5rem;
     form {
@@ -135,6 +209,13 @@ const ContactWrapper = styled.section`
           width: 100%;
         }
       }
+      .error {
+        color: red;
+        font-size: 0.875rem;
+        margin-top: -20px;
+        margin-bottom: 10px;
+        text-align: left;
+      }
     }
     .form-info {
       width: 50%;
@@ -146,25 +227,14 @@ const ContactWrapper = styled.section`
         gap: 0.5rem;
         .image {
           text-align: center;
-          /* align-items: center; */
           justify-content: center;
           max-height: 50%;
           overflow: hidden;
-          iframe{
+          iframe {
             transition: 0.5s;
           }
-          &:hover iframe{
+          &:hover iframe {
             transform: scale(1.1);
-          }
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            background-size: cover;
-            transition: 0.4s;
-            &:hover {
-              transform: scale(1.1);
-            }
           }
         }
         .personal-info {
@@ -173,8 +243,6 @@ const ContactWrapper = styled.section`
             li {
               display: flex;
               align-items: center;
-              justify-items: center;
-              align-content: center;
               margin-bottom: 30px;
               border: 1px dotted purple;
               padding: 10px 20px;
@@ -191,6 +259,11 @@ const ContactWrapper = styled.section`
                 justify-content: center;
                 align-items: center;
                 color: #000;
+                i{
+                  display:flex;
+                  justify-content:center;
+                  align-items: center;
+                }
               }
               span {
                 margin-left: 15px;
@@ -223,25 +296,6 @@ const ContactWrapper = styled.section`
     }
   }
   @media (max-width: 570px) {
-    position: relative;
-    .contact-heading {
-      position: absolute;
-      padding: 20px 0px;
-      background-color: ${({ theme }) => theme.colors.btnColorPrimary};
-      left: 50%;
-      width: 100%;
-      text-align: center;
-      transform: translateX(-50%);
-      top: 52%;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      h1 {
-        font-size: 20px;
-      }
-      p {
-        font-size: 18px;
-      }
-    }
     .contact-layout {
       flex-direction: column;
       padding: 2rem 0 1rem;

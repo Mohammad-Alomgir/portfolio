@@ -2,16 +2,17 @@ import { useEffect } from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import ExampleComponent from "./AutoTextComplete";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import the AOS CSS
+// import AOS from "aos";
+// import "aos/dist/aos.css"; // Import the AOS CSS
+import Cevron from "./Cevron";
 
 const Hero = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration (optional)
-      once: true, // Whether animation should happen only once
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000, // Animation duration (optional)
+  //     once: true, // Whether animation should happen only once
+  //   });
+  // }, []);
   return (
     <HeroWrapper id="home">
       <div className="container">
@@ -35,6 +36,9 @@ const Hero = () => {
                 Download CV
               </a>
             </Button>
+            <div id="about" className="cevron-container">
+              <Cevron />
+            </div>
           </div>
         </div>
       </div>

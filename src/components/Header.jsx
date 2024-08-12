@@ -50,10 +50,7 @@ const Header = () => {
                 <a href="#about">About</a>
               </li>
               <li>
-                <a href="#skills">Skills</a>
-              </li>
-              <li>
-                <a href="#service">Service</a>
+                <a href="#skills">services</a>
               </li>
               <li>
                 <a href="#work">Work</a>

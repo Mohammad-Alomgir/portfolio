@@ -1,23 +1,27 @@
 import styled from "styled-components";
 import Button from "./Button";
-import { Tilt } from 'react-tilt'
+import { Tilt } from "react-tilt";
 
 const defaultOptions = {
-	reverse:        false,  // reverse the tilt direction
-	max:            35,
-  scale:          1.0,     // max tilt rotation (degrees)
-	perspective:    1000,   // Transform perspective, the lower the more extreme the tilt gets.
-	speed:          800,   // Speed of the enter/exit transition
-	transition:     true,   // Set a transition on enter/exit.
-	axis:           null,   // What axis should be disabled. Can be X or Y.
-	reset:          true,    // If the tilt effect has to be reset on exit.
-	easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
-}
+  reverse: false, // reverse the tilt direction
+  max: 35,
+  scale: 1.0, // max tilt rotation (degrees)
+  perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
+  speed: 800, // Speed of the enter/exit transition
+  transition: true, // Set a transition on enter/exit.
+  axis: null, // What axis should be disabled. Can be X or Y.
+  reset: true, // If the tilt effect has to be reset on exit.
+  easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
+};
 
-const Service = ({className = "",icon, title, des }) => {
+const Service = ({ className = "", icon, title, des }) => {
   return (
     <Tilt options={defaultOptions}>
-      <ServiceWrapper id="service" className={className}>
+      <ServiceWrapper
+        id="service"
+        className={className}
+        data-aos="zoom-in-down"
+      >
         <div className="icon">
           <img src={icon} alt="icon" />
         </div>
@@ -104,7 +108,7 @@ const ServiceWrapper = styled.div`
       }
     }
   }
-  @media (max-width: 930px){
+  @media (max-width: 930px) {
     /* align-items: flex-start; */
     padding: 2rem 0 2rem 1rem !important;
     .icon {
