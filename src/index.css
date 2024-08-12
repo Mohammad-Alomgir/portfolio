@@ -89,17 +89,18 @@
 
 /* button style */
 .themeButton {
-    background-color: #4F228D;
+    background-color: #2C1250;
     padding: 10px 20px;
+    font-size: 0.8rem;
     color: #fff;
     text-transform: uppercase;
-    border: 1px solid 4F228D;
+    border: 1px solid #4F228D;
     border-radius: 6px;
     transition: all 0.5s ease-out;
 }
 
 .themeButton:hover {
-    background-color: #3f1b72;
+    background-color: transparent;
     color: #fff;
 }
 

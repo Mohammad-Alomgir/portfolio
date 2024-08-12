@@ -4,6 +4,11 @@
     "img": "/assets/images/project1.jpg",
     "title": "React Car Website",
     "description": "A sleek car website built with HTML, CSS, and JavaScript, featuring modern design, smooth animations, and responsive layouts. It offers easy navigation to browse car models, explore features, and view high-resolution images.",
+    "category": "website",
+    "link":{
+      "githubLink": "",
+      "websiteLink": ""
+    },
     "usedTecnology": [
       {
         "img": "/assets/images/htmllogo.png"
@@ -21,7 +26,11 @@
     "img": "/assets/images/project2.jpg",
     "title": "Agency Landing page",
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reiciendis eum repellendus dolores repellat? Assumenda reprehenderit impedit quo quia iusto repellendus voluptatem quam nemo quod minima maxime atque, veniam quidem!",
-    "category": "webapplication",
+    "category": "website",
+    "link":{
+      "githubLink": "",
+      "websiteLink": ""
+    },
     "usedTecnology": [
       {
         "img": "/assets/images/htmllogo.png"
@@ -31,6 +40,34 @@
       },
       {
         "img": "/assets/images/javascriptlogo.png"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "img": "/assets/images/project3.jpg",
+    "title": "Rest Country Api",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reiciendis eum repellendus dolores repellat? Assumenda reprehenderit impedit quo quia iusto repellendus voluptatem quam nemo quod minima maxime atque, veniam quidem!",
+    "category": "webapplication",
+    "link":{
+      "githubLink": "https://github.com/Mohammad-Alomgir/Country-App",
+      "websiteLink": "https://restcountryapi2024.netlify.app/"
+    },
+    "usedTecnology": [
+      {
+        "img": "/assets/images/htmllogo.png"
+      },
+      {
+        "img": "/assets/images/csslogo.png"
+      },
+      {
+        "img": "/assets/images/javascriptlogo.png"
+      },
+      {
+        "img": "/assets/images/reactlogo.png"
+      },
+      {
+        "img": "/assets/images/reactRouterLogo.svg"
       }
     ]
   },

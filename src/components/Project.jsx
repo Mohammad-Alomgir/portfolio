@@ -8,6 +8,7 @@ const Project = ({
   description,
   filterableProject,
   technology,
+  link,
 }) => {
   return (
     <ProjectWrapper className={`project ${className}`}>
@@ -22,11 +23,25 @@ const Project = ({
         <h1 className="title">{title}</h1>
         <p>{description}</p>
         <div className="btn-group">
-          <Button>Get Code</Button>
-          <Button>Live Demo</Button>
+          <a
+            className="themeButton"
+            href={link.githubLink && link.githubLink}
+            target="_blank"
+          >
+            Get Code
+          </a>
+          <a
+            className="themeButton"
+            href={link.websiteLink && link.websiteLink}
+            target="_blank"
+          >
+            Live Demo
+          </a>
         </div>
         <div className="technology-used-group">
-          {technology.map((item,index) => <img src={item.img} key={index} />)}
+          {technology.map((item, index) => (
+            <img src={item.img} key={index} />
+          ))}
         </div>
       </div>
     </ProjectWrapper>
@@ -75,10 +90,10 @@ const ProjectWrapper = styled.div`
     }
     .btn-group {
       margin-bottom: 15px;
-      button {
+      a {
         cursor: pointer;
       }
-      button:not(:first-child) {
+      a:not(:first-child) {
         margin-left: 15px;
       }
     }

@@ -43,6 +43,7 @@ const AllProject = () => {
                 img={project.img}
                 title={project.title}
                 description={project.description}
+                link={project.link}
                 technology={project.usedTecnology}
                 className="project-item"
               />

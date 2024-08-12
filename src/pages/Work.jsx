@@ -132,6 +132,7 @@ const Work = ({
                         img={project.img}
                         title={project.title}
                         description={project.description}
+                        link={project.link}
                         technology={project.usedTecnology ? project.usedTecnology : []}
                       />
                     </div>

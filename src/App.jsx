@@ -40,7 +40,7 @@ function App() {
       textSecoundary: "#7127BA",
       headingColorPrimary: "#4D4D4D",
       servicesBackground: "#693B93",
-      footerBackground: #200063;
+      footerBackground: "#200063",
       gradient:
         "linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%)",
       shadow:

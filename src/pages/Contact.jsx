@@ -2,9 +2,11 @@ import styled from "styled-components";
 import Button from "../components/Button";
 import emailjs from "emailjs-com";
 import { useState } from "react";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa";
 import { FaBlenderPhone } from "react-icons/fa";
 import { MdAttachEmail } from "react-icons/md";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +15,7 @@ const Contact = () => {
     message: "",
   });
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false); // Add loading state
 
   const validateEmail = (email) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -42,6 +45,8 @@ const Contact = () => {
     e.preventDefault();
 
     if (validateForm()) {
+      setLoading(true); // Start loading animation
+
       emailjs
         .sendForm(
           "service_061e0ge",
@@ -52,13 +57,16 @@ const Contact = () => {
         .then(
           (result) => {
             console.log(result.text);
-            alert("Message sent successfully!");
+            toast.success("Message sent successfully!");
           },
           (error) => {
             console.log(error.text);
-            alert("Failed to send message. Please try again.");
+            toast.error("Failed to send message. Please try again.");
           }
-        );
+        )
+        .finally(() => {
+          setLoading(false); // Stop loading animation
+        });
 
       e.target.reset();
       setFormData({
@@ -116,6 +124,7 @@ const Contact = () => {
                 <Button className="contact-button">Submit</Button>
               </div>
             </form>
+            {loading && <div className="spinner"></div>} {/* Render spinner when loading */}
             <div className="form-info">
               <div className="form-sub-info">
                 <div className="image">
@@ -161,6 +170,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </ContactWrapper>
   );
 };
@@ -259,9 +269,9 @@ const ContactWrapper = styled.section`
                 justify-content: center;
                 align-items: center;
                 color: #000;
-                i{
-                  display:flex;
-                  justify-content:center;
+                i {
+                  display: flex;
+                  justify-content: center;
                   align-items: center;
                 }
               }
@@ -274,6 +284,21 @@ const ContactWrapper = styled.section`
       }
     }
   }
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto; /* Center the spinner */
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
   @media (max-width: 510px) {
     position: relative;
     .contact-heading {
@@ -319,4 +344,5 @@ const ContactWrapper = styled.section`
     }
   }
 `;
+
 export default Contact;
