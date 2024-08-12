@@ -14,10 +14,10 @@ const defaultOptions = {
 	easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
 }
 
-const Service = ({ icon, title, des }) => {
+const Service = ({className = "",icon, title, des }) => {
   return (
     <Tilt options={defaultOptions}>
-      <ServiceWrapper id="service">
+      <ServiceWrapper id="service" className={className}>
         <div className="icon">
           <img src={icon} alt="icon" />
         </div>

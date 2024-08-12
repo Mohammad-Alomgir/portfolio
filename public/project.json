@@ -2,24 +2,17 @@
   {
     "id": 1,
     "img": "/assets/images/project1.jpg",
-    "title": "React Ecommerce App",
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reiciendis eum repellendus dolores repellat? Assumenda reprehenderit impedit quo quia iusto repellendus voluptatem quam nemo quod minima maxime atque, veniam quidem!",
-    "category": "website",
+    "title": "React Car Website",
+    "description": "A sleek car website built with HTML, CSS, and JavaScript, featuring modern design, smooth animations, and responsive layouts. It offers easy navigation to browse car models, explore features, and view high-resolution images.",
     "usedTecnology": [
       {
-        "img": "/assets/images/serviceIcon1.png"
+        "img": "/assets/images/htmllogo.png"
       },
       {
-        "img": "/assets/images/serviceIcon1.png"
+        "img": "/assets/images/csslogo.png"
       },
       {
-        "img": "/assets/images/serviceIcon1.png"
-      },
-      {
-        "img": "/assets/images/serviceIcon1.png"
-      },
-      {
-        "img": "/assets/images/serviceIcon1.png"
+        "img": "/assets/images/javascriptlogo.png"
       }
     ]
   },
@@ -31,19 +24,13 @@
     "category": "webapplication",
     "usedTecnology": [
       {
-        "img": "/assets/images/serviceIcon1.png"
+        "img": "/assets/images/htmllogo.png"
       },
       {
-        "img": "/assets/images/serviceIcon1.png"
+        "img": "/assets/images/csslogo.png"
       },
       {
-        "img": "/assets/images/serviceIcon1.png"
-      },
-      {
-        "img": "/assets/images/serviceIcon1.png"
-      },
-      {
-        "img": "/assets/images/serviceIcon1.png"
+        "img": "/assets/images/javascriptlogo.png"
       }
     ]
   },

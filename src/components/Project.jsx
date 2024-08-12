@@ -1,10 +1,21 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Button from "./Button";
 import { Link } from "react-router-dom";
-const Project = ({className,img, title, description,filterableProject}) => {
+const Project = ({
+  className,
+  img,
+  title,
+  description,
+  filterableProject,
+  technology,
+}) => {
   return (
     <ProjectWrapper className={`project ${className}`}>
-      <Link to="/allProject" state={filterableProject} className="project-image-links">
+      <Link
+        to="/allProject"
+        state={filterableProject}
+        className="project-image-links"
+      >
         <img src={img} alt="Project1" className="project-image" />
       </Link>
       <div className="project-info">
@@ -14,7 +25,9 @@ const Project = ({className,img, title, description,filterableProject}) => {
           <Button>Get Code</Button>
           <Button>Live Demo</Button>
         </div>
-        <div className="technology-used-group">{/* {technologyLogo} */}</div>
+        <div className="technology-used-group">
+          {technology.map((item,index) => <img src={item.img} key={index} />)}
+        </div>
       </div>
     </ProjectWrapper>
   );

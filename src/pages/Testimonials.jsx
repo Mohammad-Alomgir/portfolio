@@ -30,6 +30,7 @@ const Testimonials = () => {
             );
           })}
         </div>
+        <div style={{textAlign: "center", fontFamily: "monospace,san-serif"}}>All are damy text</div>
       </div>
     </div>
   );

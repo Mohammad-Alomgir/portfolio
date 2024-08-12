@@ -110,8 +110,13 @@ const HeroWrapper = styled.section`
           margin-top: -15px;
           font-size: 4rem;
           font-weight: 900;
-          background: #440dcf;
-          background: white;
+          /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fb83fa+0,e93cec+100;Pink+3D+%232 */
+          background: linear-gradient(
+            to bottom,
+            #fb83fa 0%,
+            #e93cec 100%
+          ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }

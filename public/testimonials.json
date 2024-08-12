@@ -1,23 +1,22 @@
 [
-    {
-      "name": "Daniel Lewis",
-      "avatar": "/assets/images/avatar-1.png",
-      "testimonial": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of the client."
-    },
-    {
-      "name": "Jessica Miller",
-      "avatar": "/assets/images/avatar-2.png",
-      "testimonial": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of the client."
-    },
-    {
-      "name": "Emily Evans",
-      "avatar": "/assets/images/avatar-3.png",
-      "testimonial": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of the client."
-    },
-    {
-      "name": "Henry William",
-      "avatar": "/assets/images/avatar-4.png",
-      "testimonial": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of the client."
-    }
-  ]
-  
+  {
+    "name": "Daniel Lewis",
+    "avatar": "/assets/images/avatar-1.png",
+    "testimonial": "Working with Alomgir was a game-changer for our website! His keen eye for design and seamless code integration brought our vision to life. The attention to detail was impeccable."
+  },
+  {
+    "name": "Jessica Miller",
+    "avatar": "/assets/images/avatar-2.png",
+    "testimonial": "Alomgir delivered a stunning website that exceeded our expectations. His expertise in HTML, CSS, and JavaScript made the entire process smooth and efficient. We couldn't be happier!"
+  },
+  {
+    "name": "Emily Evans",
+    "avatar": "/assets/images/avatar-3.png",
+    "testimonial": "Alomgir is a true front-end wizard! He took our PSD designs and turned them into a fully responsive, user-friendly website. His dedication and skill are top-notch."
+  },
+  {
+    "name": "Henry William",
+    "avatar": "/assets/images/avatar-4.png",
+    "testimonial": "Alomgir created a sleek and professional email signature that perfectly represents our brand. His attention to detail and understanding of our needs made the process effortless. Highly recommended!"
+  }
+]

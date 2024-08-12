@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Button from "../components/Button";
 import emailjs from 'emailjs-com';
+import { FaLocationDot } from "react-icons/fa6";
 const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
@@ -62,21 +63,21 @@ const Contact = () => {
                   <ul>
                     <li>
                       <div>
-                        <i>L</i>
+                        <i><FaLocationDot /></i>
                       </div>
-                      <span>123 street kantanagor , Dhunat, bogura</span>
+                      <span>expectantcoder@gmail.com</span>
                     </li>
                     <li>
                       <div>
                         <i>L</i>
                       </div>
-                      <span>123 street kantanagor , Dhunat, bogura</span>
+                      <span>+8801310395359</span>
                     </li>
                     <li>
                       <div>
                         <i>L</i>
                       </div>
-                      <span>123 street kantanagor , Dhunat, bogura</span>
+                      <span> Rajshahi Sahar » 6200</span>
                     </li>
                   </ul>
                 </div>

@@ -20,30 +20,35 @@ const Skills = () => {
               title="Custom Frontend Developement"
               des=" Take your client onboard seamlessly by our amazing tool of digital
           onboard process."
+              className="up-down"
             />
             <Service
               icon="/assets/images/serviceIcon2.png"
               title=" React Web App developemnt "
               des=" Take your client onboard seamlessly by our amazing tool of digital
           onboard process."
+              className="rotate-360"
             />
             <Service
               icon="/assets/images/serviceIcon3.png"
               title="javascript developement"
               des=" Take your client onboard seamlessly by our amazing tool of digital
           onboard process."
+              className="up-down"
             />
             <Service
               icon="/assets/images/serviceIcon5.png"
               title="SEO friendly Code"
               des=" Take your client onboard seamlessly by our amazing tool of digital
           onboard process."
+              className="up-down"
             />
             <Service
               icon="/assets/images/serviceIcon4.png"
               title="Email Signature design && developemet"
               des=" Take your client onboard seamlessly by our amazing tool of digital
           onboard process."
+              className="up-down"
             />
           </div>
         </div>

@@ -126,11 +126,13 @@ const Work = ({
                 displayedProjects().map((project, index) =>
                   project.category !== "emailsignature" ? (
                     <div className="project-cards" key={index}>
+                      {console.log(project.usedTecnology)}
                       <Project
                         filterableProject={filterableProject}
                         img={project.img}
                         title={project.title}
                         description={project.description}
+                        technology={project.usedTecnology ? project.usedTecnology : []}
                       />
                     </div>
                   ) : (

@@ -1,10 +1,28 @@
+import React, { useState, useEffect } from "react";
 import { GlobalStyle } from "./components/GlobalStyle";
 import Home from "./pages/Home";
-import './index.css'
+import "./index.css";
 import { ThemeProvider } from "styled-components";
-import { createBrowserRouter,RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AllProject from "./components/AllProject";
+import GoToTop from "./components/GoToTop";
+import Loading from "./components/Loading"; // Import the Loading component
+
 function App() {
+  const [loading, setLoading] = useState(true); // Add loading state
+
+  useEffect(() => {
+    // Wait until the whole page is fully loaded
+    const handleLoad = () => {
+      console.log("page fully loaded");
+      setLoading(false)
+    };
+    window.addEventListener("load", handleLoad);
+
+    // Clean up the event listener
+    return () => window.removeEventListener("load", handleLoad);
+  }, []);
+
   const theme = {
     colors: {
       borderColorPrimary: "#4F228D",
@@ -14,22 +32,36 @@ function App() {
       textSecoundary: "#7127BA",
       headingColorPrimary: "#4D4D4D",
       servicesBackground: "#693B93",
+      gradient:
+        "linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%)",
+      shadow:
+        "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;",
+      shadowSupport: " rgba(0, 0, 0, 0.16) 0px 1px 4px",
     },
   };
+
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />
+      element: <Home />,
     },
     {
       path: "/allproject",
-      element: <AllProject />
-    }
-  ])
+      element: <AllProject />,
+    },
+  ]);
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <RouterProvider router={router} />
+      {loading ? (
+        <Loading /> // Show loading animation while loading is true
+      ) : (
+        <>
+          <GoToTop />
+          <RouterProvider router={router} />
+        </>
+      )}
     </ThemeProvider>
   );
 }
