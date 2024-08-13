@@ -121,31 +121,83 @@
 }
 
 /* grid system for email signature css */
-.signatureImage {
+a.signatureImage {
     position: relative;
+    transition: 0.5s;
 }
 
-.signatureImage img {
+a.signatureImage img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     background-size: cover;
-    /* position: relative; */
     transition: 0.4s;
 }
 
-.signatureImage img:hover {
+a.signatureImage img:hover {
     transform: scale(0.9) !important;
 }
 
-.signatureImage::after {
+a.signatureImage::after {
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 19;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Hide the element */
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
+
+a.signatureImage:hover::after {
+    opacity: 1; /* Show the overlay */
+    visibility: visible;
+    
+}
+
+.findMeHere {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Hide the element */
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+a.signatureImage:hover .findMeHere {
+    opacity: 1; /* Show the content */
+    visibility: visible;
+}
+
+.findMeHere a {
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    width: 100%;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.findMeHere a img {
+    width: 40px;
+    height: 40px;
+    background-color: #4F228D;
+    border-radius: 100%;
+    padding: 5px;
+}
+
 
 .horizontal {
     grid-column: auto / span 2;

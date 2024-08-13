@@ -3,12 +3,14 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import SignatureContainer from "./SignatureContainer";
 import Project from "./Project";
+import Footer from "./Footer";
 
 const AllProject = () => {
   const navigate = useNavigate();
   const location = useLocation();
   
   return (
+    <>
     <AllProjectWrapper>
       <Link
         to={navigate(-1)}
@@ -51,6 +53,8 @@ const AllProject = () => {
           )}
       </div>
     </AllProjectWrapper>
+     <Footer />
+     </>
   );
 };
 

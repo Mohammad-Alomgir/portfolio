@@ -61,7 +61,7 @@ const Wrapper = styled.section`
     cursor: pointer;
 
     &--icon {
-        font-size: 20px;
+      font-size: 20px;
       animation: gototop 3s linear infinite alternate-reverse;
     }
 
@@ -75,10 +75,16 @@ const Wrapper = styled.section`
     }
   }
 
+  @media (max-width: 570px) {
+    .top-btn {
+      right: 20px;
+      bottom: 10px;
+    }
+  }
   @media (max-width: 768px) {
     .top-btn {
-      right: 0;
-      left: 40%;
+      right: 20px;
+      bottom: 10px;
     }
   }
 `;

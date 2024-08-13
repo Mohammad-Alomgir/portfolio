@@ -25,7 +25,7 @@ const Project = ({
         <div className="btn-group">
           <a
             className="themeButton"
-            href={link.githubLink && link.githubLink}
+            href={link.githubLink ? link.githubLink : "https://github.com/Mohammad-Alomgir?tab=repositories"}
             target="_blank"
           >
             Get Code

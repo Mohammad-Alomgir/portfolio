@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { CiMenuFries } from "react-icons/ci";
 import { IoIosClose } from "react-icons/io";
-
+import Nav from "./Nav";
 const Header = () => {
-  const [hambleBer, SetHambleBur] = useState(false);
+  const [hambleBer, setHambleBur] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleHambleBer = () => {
-    SetHambleBur(() => !hambleBer);
+    setHambleBur(() => !hambleBer);
   };
 
   const handleScroll = () => {
@@ -42,23 +42,7 @@ const Header = () => {
             </a>
           </div>
           <div className="menu">
-            <ul className="menu-lists" onClick={() => !hambleBer}>
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#skills">services</a>
-              </li>
-              <li>
-                <a href="#work">Work</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
+            <Nav setHambleBur={setHambleBur} />
           </div>
           <div className="mobile-btn">
             <i className="menu-icon" onClick={handleHambleBer}>
