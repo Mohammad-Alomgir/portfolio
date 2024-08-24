@@ -5,7 +5,7 @@
     "title": "React Car Website",
     "description": "A sleek car website built with HTML, CSS, and JavaScript, featuring modern design, smooth animations, and responsive layouts. It offers easy navigation to browse car models, explore features, and view high-resolution images.",
     "category": "website",
-    "link":{
+    "link": {
       "githubLink": "",
       "websiteLink": ""
     },
@@ -27,7 +27,7 @@
     "title": "Agency Landing page",
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reiciendis eum repellendus dolores repellat? Assumenda reprehenderit impedit quo quia iusto repellendus voluptatem quam nemo quod minima maxime atque, veniam quidem!",
     "category": "website",
-    "link":{
+    "link": {
       "githubLink": "",
       "websiteLink": ""
     },
@@ -45,13 +45,160 @@
   },
   {
     "id": 3,
-    "img": "/assets/images/project3.jpg",
-    "title": "Rest Country Api",
+    "img": "/assets/images/realstate.jpg",
+    "title": "Realstate landing page",
+    "description": "Created a feature-rich WordPress website for a real estate business, integrating property listings, search filters, and contact forms to streamline the property search and client communication process.",
+    "category": "website",
+    "link": {
+      "githubLink": "",
+      "websiteLink": "https://alomgir-real-state.netlify.app"
+    },
+    "usedTecnology": [
+      {
+        "img": "/assets/images/htmllogo.png"
+      },
+      {
+        "img": "/assets/images/csslogo.png"
+      },
+      {
+        "img": "/assets/images/elementor.png"
+      },
+      {
+        "img": "/assets/images/wordpress.png"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "img": "/assets/images/construction.jpg",
+    "title": "Construction Landing page",
+    "description": "Built a robust and informative WordPress website for a construction company, highlighting services, project portfolios, and client testimonials, with a focus on showcasing industry expertise and professionalism.",
+    "category": "website",
+    "link": {
+      "githubLink": "",
+      "websiteLink": "https://alomgir-construction-center.netlify.app"
+    },
+    "usedTecnology": [
+      {
+        "img": "/assets/images/htmllogo.png"
+      },
+      {
+        "img": "/assets/images/csslogo.png"
+      },
+      {
+        "img": "/assets/images/elementor.png"
+      },
+      {
+        "img": "/assets/images/wordpress.png"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "img": "/assets/images/onlinestore.jpg",
+    "title": "Attractive Online store",
+    "description": "Developed a fully functional e-commerce WordPress website with secure payment integration, product management, and a sleek design that enhances the shopping experience for users.",
+    "category": "website",
+    "link": {
+      "githubLink": "",
+      "websiteLink": "https://alomgironlinestore.netlify.app"
+    },
+    "usedTecnology": [
+      {
+        "img": "/assets/images/htmllogo.png"
+      },
+      {
+        "img": "/assets/images/csslogo.png"
+      },
+      {
+        "img": "/assets/images/elementor.png"
+      },
+      {
+        "img": "/assets/images/wordpress.png"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "img": "/assets/images/travel.jpg",
+    "title": "Travel website",
+    "description": "A dynamic travel website featuring user-friendly navigation, visually appealing layouts, and responsive design. The site includes interactive elements like booking forms, destination galleries, and blog sections to enhance the user experience.",
+    "category": "website",
+    "link": {
+      "githubLink": "https://github.com/Mohammad-Alomgir/travel-with-alomgir",
+      "websiteLink": "https://travelwithalomgir.netlify.app"
+    },
+    "usedTecnology": [
+      {
+        "img": "/assets/images/htmllogo.png"
+      },
+      {
+        "img": "/assets/images/csslogo.png"
+      },
+      {
+        "img": "/assets/images/elementor.png"
+      },
+      {
+        "img": "/assets/images/wordpress.png"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "img": "/assets/images/dentist.png",
+    "title": "Dentist Landing page",
+    "description": "Created a professional and user-friendly website for a dental clinic, focusing on easy navigation, appointment booking functionality, and a clean design that reflects the clinic’s commitment to patient care.",
+    "category": "website",
+    "link": {
+      "githubLink": "https://github.com/Mohammad-Alomgir/dental-website",
+      "websiteLink": "https://dentalinbangladesh.netlify.app"
+    },
+    "usedTecnology": [
+      {
+        "img": "/assets/images/htmllogo.png"
+      },
+      {
+        "img": "/assets/images/csslogo.png"
+      },
+      {
+        "img": "/assets/images/elementor.png"
+      },
+      {
+        "img": "/assets/images/wordpress.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "img": "/assets/images/project2.jpg",
+    "title": "Agency Landing page",
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reiciendis eum repellendus dolores repellat? Assumenda reprehenderit impedit quo quia iusto repellendus voluptatem quam nemo quod minima maxime atque, veniam quidem!",
+    "category": "website",
+    "link": {
+      "githubLink": "",
+      "websiteLink": ""
+    },
+    "usedTecnology": [
+      {
+        "img": "/assets/images/htmllogo.png"
+      },
+      {
+        "img": "/assets/images/csslogo.png"
+      },
+      {
+        "img": "/assets/images/javascriptlogo.png"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "img": "/assets/images/quize.jpg",
+    "title": "Quize Application",
+    "description": "Developed an interactive quiz application using HTML, CSS, React, and Firebase, featuring real-time data management and responsive design to ensure a seamless user experience across devices",
     "category": "webapplication",
-    "link":{
-      "githubLink": "https://github.com/Mohammad-Alomgir/Country-App",
-      "websiteLink": "https://restcountryapi2024.netlify.app/"
+    "link": {
+      "githubLink": "https://github.com/Mohammad-Alomgir/Quize",
+      "websiteLink": "https://solve-quize.netlify.app/"
     },
     "usedTecnology": [
       {
@@ -75,32 +222,20 @@
     "id": 4,
     "category": "emailsignature",
     "emailSignatures": [
-      {"img": "/assets/images/signature1.jpg",
-       "className": "horizontal"},
-      {"img": "/assets/images/signature2.jpeg" ,
-      "className": "vertical"},
-      {"img": "/assets/images/signature3.jpeg" ,
-      "className": "vertical"},
-      {"img": "/assets/images/signature4.jpg" ,
-      "className": "horizontal"},
-      {"img": "/assets/images/signature5.jpg" ,
-      "className": "big"},
-      {"img": "/assets/images/signature6.png" ,
-      "className": "horizontal"},
-      {"img": "/assets/images/signature7.jpeg" ,
-      "className": "vertical"},
-      {"img": "/assets/images/signature8.jpeg" ,
-      "className": "vertical"},
-      {"img": "/assets/images/signature9.jpeg" ,
-      "className": "vertical"},
-      {"img": "/assets/images/signature10.jpeg" ,
-      "className": "vertical"},
-      {"img": "/assets/images/signature11.jpeg" ,
-      "className": "vertical"},
-      {"img": "/assets/images/signature12.jpg" ,
-      "className": "horizontal"},
-      {"img": "/assets/images/signature13.jpg" ,
-      "className": "horizontal"}
+      { "img": "/assets/images/signature1.jpg", "className": "horizontal" },
+      { "img": "/assets/images/signature2.jpeg", "className": "vertical" },
+      { "img": "/assets/images/signature3.jpeg", "className": "vertical" },
+      { "img": "/assets/images/signature4.jpg", "className": "horizontal" },
+      { "img": "/assets/images/signature5.jpg", "className": "big" },
+      { "img": "/assets/images/signature6.png", "className": "horizontal" },
+      { "img": "/assets/images/signature7.jpeg", "className": "vertical" },
+      { "img": "/assets/images/signature8.jpeg", "className": "vertical" },
+      { "img": "/assets/images/signature9.jpeg", "className": "vertical" },
+      { "img": "/assets/images/signature10.jpeg", "className": "vertical" },
+      { "img": "/assets/images/signature11.jpeg", "className": "vertical" },
+      { "img": "/assets/images/signature12.jpg", "className": "horizontal" },
+      { "img": "/assets/images/signature13.jpg", "className": "horizontal" },
+      { "img": "/assets/images/signature14.jpg", "className": "horizontal" }
     ]
   }
 ]
