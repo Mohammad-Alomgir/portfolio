@@ -17,7 +17,7 @@ const defaultOptions = {
   easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
 };
 
-const Service = ({ className = "", icon, title, des, services,link}) => {
+const Service = ({ className = "", icon, title, des, services,state="",children}) => {
   console.log("alomgir",services)
   return (
     <Tilt options={defaultOptions}>
@@ -32,7 +32,7 @@ const Service = ({ className = "", icon, title, des, services,link}) => {
         <div className="service-body">
           <h2>{title}</h2>
           <p>{des}</p>
-          <CustomThemeButton src={link} state={services}>Explore more</CustomThemeButton>
+          {children}
         </div>
       </ServiceWrapper>
     </Tilt>
@@ -84,7 +84,7 @@ const ServiceWrapper = styled.div`
     }
     .service-body {
       h2 {
-        font-size: 24px;
+        font-size: 20px;
       }
       p {
         font-size: 18px;

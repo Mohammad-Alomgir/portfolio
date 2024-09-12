@@ -1,7 +1,19 @@
 import styled from "styled-components";
 import Service from "../components/Service";
-
+import { useEffect, useState } from "react";
+import GlobalService from "../components/GlobalService"
+import CustomThemeButton from "../components/CustomThemeButton";
 const Skills = () => {
+  const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    fetch('service.json')
+    .then((res) => res.json())
+    .then((allServices) => {
+      setServices(allServices);
+    })
+    .catch((err) => console.log(err.message))
+  })
   return (
     <SkillWrapper id="skills">
       <div className="container service-container">
@@ -15,41 +27,9 @@ const Skills = () => {
             <h1 className="service-title element">Services</h1>
           </div>
           <div className="services">
-            <Service
-              icon="/assets/images/serviceIcon1.png"
-              title="Custom Frontend Developement"
-              des=" Take your client onboard seamlessly by our amazing tool of digital
-          onboard process."
-              className="up-down"
-            />
-            <Service
-              icon="/assets/images/serviceIcon2.png"
-              title=" React Web App developemnt "
-              des=" Take your client onboard seamlessly by our amazing tool of digital
-          onboard process."
-              className="rotate-360"
-            />
-            <Service
-              icon="/assets/images/serviceIcon3.png"
-              title="javascript developement"
-              des=" Take your client onboard seamlessly by our amazing tool of digital
-          onboard process."
-              className="up-down"
-            />
-            <Service
-              icon="/assets/images/serviceIcon5.png"
-              title="SEO friendly Code"
-              des=" Take your client onboard seamlessly by our amazing tool of digital
-          onboard process."
-              className="up-down"
-            />
-            <Service
-              icon="/assets/images/serviceIcon4.png"
-              title="Email Signature design && developemet"
-              des=" Take your client onboard seamlessly by our amazing tool of digital
-          onboard process."
-              className="up-down"
-            />
+            {services.map((services,index) => <GlobalService services={services.Services} key={index} title={services.title} des={services.description} icon={services.img}>
+            <CustomThemeButton src="/allservicedetails" state={services.Services}>Explore more</CustomThemeButton>
+            </GlobalService>)}
           </div>
         </div>
       </div>
@@ -106,16 +86,13 @@ const SkillWrapper = styled.section`
         .services {
           display: flex;
           flex-direction: column;
-          :nth-of-type(5) {
-            align-items: flex-start;
-            text-align: left;
             .icon {
               max-width: 40%;
             }
           }
         }
       }
-    }
+
   }
 `;
 

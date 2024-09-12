@@ -3,7 +3,6 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import SignatureContainer from "./SignatureContainer";
 import Project from "./Project";
-import Footer from "./Footer";
 
 const AllProject = () => {
   const navigate = useNavigate();
@@ -13,7 +12,7 @@ const AllProject = () => {
     <>
     <AllProjectWrapper>
       <Link
-        to={navigate(-1)}
+        to={navigate("/")}
         className="themeButton"
         style={{ display: "inline-block" }}
       >
@@ -53,13 +52,13 @@ const AllProject = () => {
           )}
       </div>
     </AllProjectWrapper>
-     <Footer />
      </>
   );
 };
 
 const AllProjectWrapper = styled.div`
   padding: 4rem 3rem;
+  padding-top: 12rem;
   .project-field {
     padding-top: 3rem;
     margin: 0 auto;

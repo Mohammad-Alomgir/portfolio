@@ -1,0 +1,73 @@
+[
+  {
+    "img": "assets/images/3dwordpressicon.png",
+    "title": "Wordpress",
+    "description": "Offering professional WordPress development services, specializing in creating fully responsive and customized websites. From theme customization to plugin integration, delivering user-friendly and SEO-optimized solutions to help businesses grow their online presence.",
+    "Services": [
+      {
+        "img": "assets/images/3dwordpressicon.png",
+        "title": "Custom Wordpress Website",
+        "descrition": "Offering custom WordPress development services to create fully responsive and personalized websites. From theme customization to bespoke plugin integration, I provide SEO-optimized and user-friendly solutions to help elevate your brand’s online presence."
+      },
+      {
+        "img": "assets/images/3dfigmaicon.png",
+        "title": "Figma to wordpress Elementor",
+        "descrition": "Specializing in converting Figma designs into fully functional WordPress websites. Delivering pixel-perfect, responsive, and user-friendly websites that maintain design integrity while incorporating best practices for SEO and performance."
+      },
+      {
+        "img": "assets/images/3decommerceicon.png",
+        "title": "Woocommerce developement",
+        "descrition": "Providing expert WooCommerce development services, specializing in building fully customized, secure, and scalable e-commerce websites. From product management to payment gateway integration, I deliver user-friendly and conversion-focused solutions to grow your online store."
+      },
+      {
+        "img": "assets/images/3dseoicon.png",
+        "title": "Wordpress one page SEO",
+        "descrition": "Offering comprehensive WordPress SEO services to help improve your search engine visibility. From keyword optimization to technical SEO audits, I focus on creating SEO-friendly content and enhancing site performance to boost organic traffic."
+      },
+      {
+        "img": "assets/images/3drealestateicon.png",
+        "title": "Real Estate listiong website",
+        "descrition": "Offering professional real estate website development services, specializing in creating responsive and SEO-optimized property listing websites. With features like advanced search filters, interactive maps, and user-friendly interfaces, I help you connect buyers with the perfect property."
+      },
+      {
+        "img": "assets/images/3dspeedicon.png",
+        "title": "Wordpress website speed optimize",
+        "descrition": "Specializing in WordPress speed optimization services, ensuring your website loads quickly and performs efficiently. By optimizing images, code, and server configurations, I help enhance user experience and improve SEO rankings."
+
+
+      },
+      {
+        "img": "assets/images/3dsecurityicon.png",
+        "title": "Wordpress website Security",
+        "descrition": "Providing advanced WordPress security services to safeguard your website from threats and vulnerabilities. Implementing best practices like regular updates, firewall setup, and malware scanning to keep your site secure and your data protected."
+      }
+    ]
+  },
+  {
+    "img": "assets/images/3dfrontendicon.png",
+    "title": "Custom Frontend developement",
+    "description": "Delivering top-notch front-end development services with expertise in React and Tailwind CSS. Specializing in building dynamic, responsive, and visually stunning websites that offer smooth user experiences, optimized for performance and scalability.",
+    "Services": [
+      {
+        "img": "assets/images/htmllogo.png",
+        "title": "HTML & CSS developement",
+        "description": "Offering expert HTML and CSS development services, specializing in crafting fully responsive and visually appealing websites. Delivering clean, structured code for fast-loading, user-friendly, and mobile-optimized websites that enhance your online presence."
+      },
+      {
+        "img": "assets/images/javascriptlogo.png",
+        "title": "Javascript developent",
+        "description": "Providing professional JavaScript development services to build dynamic, interactive, and responsive websites. Specializing in creating seamless user experiences with modern JavaScript frameworks to ensure fast performance and optimized functionality."
+      },
+      {
+        "img": "assets/images/reactlogo.png",
+        "title": "React developement",
+        "description": "Delivering top-tier React development services, specializing in creating responsive and high-performance web applications. With a focus on reusable components and optimized performance, I build scalable solutions tailored to your business needs."
+      },
+      {
+        "img": "assets/images/3demailicon.png",
+        "title": "Email signature Design and Developemnt",
+        "description": "Delivering top-tier React development services, specializing in creating responsive and high-performance web applications. With a focus on reusable components and optimized performance, I build scalable solutions tailored to your business needs."
+      }
+    ]
+  }
+]

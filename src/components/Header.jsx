@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { CiMenuFries } from "react-icons/ci";
 import { IoIosClose } from "react-icons/io";
 import Nav from "./Nav";
+import  {Link} from "react-router-dom";
 const Header = () => {
   const [hambleBer, setHambleBur] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,14 +33,14 @@ const Header = () => {
       <div className="container">
         <nav className={`${hambleBer ? "active" : ""}`}>
           <div className="brand">
-            <a href="#home">
+            <Link to="/#home">
               <h1
                 className="element"
                 style={{ fontFamily: "Playwrite NZ,san-serif" }}
               >
                 Alomgir
               </h1>
-            </a>
+            </Link>
           </div>
           <div className="menu">
             <Nav setHambleBur={setHambleBur} />
@@ -61,7 +62,7 @@ const HeaderWrapper = styled.header`
   top: 0;
   left: 0;
   padding-inline: 2rem;
-  z-index: 9999999999;
+  z-index: 999999;
   margin-inline: auto;
   padding: 2rem 0;
   width: 100%;

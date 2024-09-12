@@ -51,7 +51,7 @@ const HeroWrapper = styled.section`
   justify-content: center;
   align-items: center;
   background-image: url("/assets/images/heroBackground.jpg");
-  z-index: 99999999;
+  z-index: 99999;
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;

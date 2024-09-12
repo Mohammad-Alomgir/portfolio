@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { GlobalStyle } from "./components/GlobalStyle";
 import Home from "./pages/Home";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./index.css";
 import { ThemeProvider } from "styled-components";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AllProject from "./components/AllProject";
 import GoToTop from "./components/GoToTop";
 // import Loading from "./components/Loading"; // Import the Loading component
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS CSS
+import AllServicesDetails from "./components/AllServicesDetails";
 
 function App() {
   // const [loading, setLoading] = useState(true);
@@ -50,22 +53,19 @@ function App() {
     },
   };
 
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home />,
-    },
-    {
-      path: "/allproject",
-      element: <AllProject />,
-    },
-  ]);
-
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <GoToTop />
-      <RouterProvider router={router} />
+      <BrowserRouter> {/* Wrap all components inside BrowserRouter */}
+        <Header />
+        <Routes> {/* Define all your routes inside Routes */}
+          <Route path="/" element={<Home />} />
+          <Route path="/allproject" element={<AllProject />} />
+          <Route path="/allservicedetails" element={<AllServicesDetails />} />
+        </Routes>
+        <GoToTop />
+        <Footer />
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
