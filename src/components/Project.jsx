@@ -135,7 +135,7 @@ const ProjectWrapper = styled.div`
     }
   }
   @media (max-width: 570px) {
-    z-index: -9;
+    z-index: 99;
     position: relative;
     padding-right: 0;
     flex-direction: column;
