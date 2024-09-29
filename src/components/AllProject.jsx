@@ -85,6 +85,9 @@ const AllProjectWrapper = styled.div`
       gap: 3px;
     }
   }
+  @media (max-width: 430px){
+    padding: 6rem 1rem 1rem 1rem;
+  }
 `;
 
 export default AllProject;
