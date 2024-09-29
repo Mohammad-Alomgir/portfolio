@@ -12,6 +12,8 @@ import GoToTop from "./components/GoToTop";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS CSS
 import AllServicesDetails from "./components/AllServicesDetails";
+import CategoryBlogs from "./components/CategoryBlogs";
+import SingleBlogPage from './components/SingleBlogPage'
 
 function App() {
   // const [loading, setLoading] = useState(true);
@@ -62,6 +64,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/allproject" element={<AllProject />} />
           <Route path="/allservicedetails" element={<AllServicesDetails />} />
+          <Route path="/categoryblogs" element={<CategoryBlogs />} />
+          <Route path="/singleblogpage" element={<SingleBlogPage />} />
         </Routes>
         <GoToTop />
         <Footer />

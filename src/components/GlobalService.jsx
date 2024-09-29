@@ -18,7 +18,6 @@ const defaultOptions = {
 };
 
 const Service = ({ className = "", icon, title, des, services,state="",children}) => {
-  console.log("alomgir",services)
   return (
     <Tilt options={defaultOptions}>
       <ServiceWrapper

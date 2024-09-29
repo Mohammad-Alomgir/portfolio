@@ -13,7 +13,8 @@ const Project = ({
   return (
     <ProjectWrapper className={`project ${className}`}>
       <Link
-        to="/allProject"
+        to={link.websiteLink}
+        target="_blank"
         state={filterableProject}
         className="project-image-links"
       >

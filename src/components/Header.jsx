@@ -145,7 +145,7 @@ const HeaderWrapper = styled.header`
   /* Responsive Styles */
   @media (max-width: 768px) {
     position: absolute;
-    width: 96%;
+    width: 100%;
     padding: 1rem;
     .container {
       nav {

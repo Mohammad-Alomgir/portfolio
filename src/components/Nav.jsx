@@ -49,6 +49,15 @@ const Nav = ({ setHambleBur }) => {
           <RouterLink to="/#work" smooth={true} duration={500} >Work</RouterLink>
         )}
       </li>
+      <li>
+        {isHomePage ? (
+          <ScrollLink to="Blog" smooth={true} duration={100}>
+            Blog
+          </ScrollLink>
+        ) : (
+          <RouterLink to="/#Blog" smooth={true} duration={500} >Blog</RouterLink>
+        )}
+      </li>
 
       <li>
         {isHomePage ? (

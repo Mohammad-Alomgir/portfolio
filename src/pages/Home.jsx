@@ -6,6 +6,7 @@ import Skills from "./Skills";
 import Work from "./Work";
 import Testimonials from "./Testimonials";
 import Contact from "./Contact";
+import Blog from "../pages/Blog";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <About />
       <Skills />
       <Work showAllProjects={true} projectNumber="5" numberOfEmailSignature="4"/>
+      <Blog />
       <Testimonials />
       <Contact />
     </>

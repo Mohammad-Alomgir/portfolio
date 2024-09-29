@@ -26,7 +26,7 @@
       },
       {
         "img": "assets/images/3drealestateicon.png",
-        "title": "Real Estate listiong website",
+        "title": "Real Estate listing website",
         "descrition": "Offering professional real estate website development services, specializing in creating responsive and SEO-optimized property listing websites. With features like advanced search filters, interactive maps, and user-friendly interfaces, I help you connect buyers with the perfect property."
       },
       {
@@ -51,22 +51,22 @@
       {
         "img": "assets/images/htmllogo.png",
         "title": "HTML & CSS developement",
-        "description": "Offering expert HTML and CSS development services, specializing in crafting fully responsive and visually appealing websites. Delivering clean, structured code for fast-loading, user-friendly, and mobile-optimized websites that enhance your online presence."
+        "descrition": "Offering expert HTML and CSS development services, specializing in crafting fully responsive and visually appealing websites. Delivering clean, structured code for fast-loading, user-friendly, and mobile-optimized websites that enhance your online presence."
       },
       {
         "img": "assets/images/javascriptlogo.png",
         "title": "Javascript developent",
-        "description": "Providing professional JavaScript development services to build dynamic, interactive, and responsive websites. Specializing in creating seamless user experiences with modern JavaScript frameworks to ensure fast performance and optimized functionality."
+        "descrition": "Providing professional JavaScript development services to build dynamic, interactive, and responsive websites. Specializing in creating seamless user experiences with modern JavaScript frameworks to ensure fast performance and optimized functionality."
       },
       {
         "img": "assets/images/reactlogo.png",
         "title": "React developement",
-        "description": "Delivering top-tier React development services, specializing in creating responsive and high-performance web applications. With a focus on reusable components and optimized performance, I build scalable solutions tailored to your business needs."
+        "descrition": "Delivering top-tier React development services, specializing in creating responsive and high-performance web applications. With a focus on reusable components and optimized performance, I build scalable solutions tailored to your business needs."
       },
       {
         "img": "assets/images/3demailicon.png",
         "title": "Email signature Design and Developemnt",
-        "description": "Delivering top-tier React development services, specializing in creating responsive and high-performance web applications. With a focus on reusable components and optimized performance, I build scalable solutions tailored to your business needs."
+        "descrition": "Delivering top-tier React development services, specializing in creating responsive and high-performance web applications. With a focus on reusable components and optimized performance, I build scalable solutions tailored to your business needs."
       }
     ]
   }

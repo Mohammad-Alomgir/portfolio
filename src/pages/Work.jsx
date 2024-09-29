@@ -15,14 +15,15 @@ const Work = ({
   const [isAvailableNumberOfProject, setIsAvailableNumberOfProject] =
     useState(false);
   const [showLoadMore, setShowLoadMore] = useState(false);
+  // console.log(showLoadMore)
   const [
     isAvailableNumberOfEmailSignature,
     setIsAvailableNumberOfEmailSignature,
   ] = useState(false);
 
+  // console.log(isAvailableNumberOfEmailSignature);
+
   useEffect(() => {
-    setShowLoadMore(false);
-    console.log(showLoadMore);
     fetch("project.json")
       .then((res) => res.json())
       .then((data) => {
@@ -46,30 +47,27 @@ const Work = ({
 
   // Check whether more email signature have or not
 
-  useEffect(() => {
-    const hasMoreEmailSignatures = projects.map((project) => {
+  const hasMoreEmailSignatures = () => {
+    const hasMoreEmailSignature = projects && projects.map((project) => {
       if (
-        showLoadMore &&
         project.category === "emailsignature" &&
-        project.emailSignatures &&
-        project.emailSignatures.length > numberOfEmailSignature
+        project.emailSignatures && project.emailSignatures.length > numberOfEmailSignature
       ) {
+       console.log(project.category)
         return true;
       } else {
+        console.log(showLoadMore,project.category,project.emailSignatures,numberOfEmailSignature)
         return false;
       }
     });
-    console.log(showLoadMore);
-    setIsAvailableNumberOfEmailSignature(hasMoreEmailSignatures);
-  }, [projects, numberOfEmailSignature, showLoadMore]);
+    setIsAvailableNumberOfEmailSignature(hasMoreEmailSignature);
+  }
 
   const displayedProjects = () => {
     return showAllProjects && projectNumber < filterableProject.length
       ? filterableProject.slice(0, Number(projectNumber))
       : filterableProject;
   };
-  console.log(displayedProjects());
-  console.log("hello");
   return (
     <WorkWrapper id="work">
       <div className="container">
@@ -98,6 +96,7 @@ const Work = ({
                   onClick={(e) => {
                     e.preventDefault();
                     setSelectedCategory("webapplication");
+                    setIsAvailableNumberOfEmailSignature(false)
                   }}
                 >
                   <a href="#">Web Application</a>
@@ -115,6 +114,7 @@ const Work = ({
                     e.preventDefault();
                     setSelectedCategory("emailsignature");
                     setShowLoadMore(true);
+                    hasMoreEmailSignatures()
                   }}
                 >
                   <a href="#">Email Signature</a>
@@ -126,7 +126,7 @@ const Work = ({
                 displayedProjects().map((project, index) =>
                   project.category !== "emailsignature" ? (
                     <div className="project-cards" key={index}>
-                      {console.log(project.usedTecnology)}
+
                       <Project
                         filterableProject={filterableProject}
                         img={project.img}
