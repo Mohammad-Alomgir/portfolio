@@ -29,7 +29,10 @@ const Footer = () => {
       <div className="right-blank blank"></div>
       <div className="footer-social-blank">
         <div className="social-icons">
-          <a href="https://wa.me/01310395359?text=Your%20pre-filled%20message" target="_blank">
+          <a
+            href="https://wa.me/01310395359?text=Your%20pre-filled%20message"
+            target="_blank"
+          >
             <img src="/assets/images/whatsapp.png" alt="whatsapp" />
           </a>
           <a href="">
@@ -43,7 +46,10 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <p className="copyrightText" style={{ textAlign: "center", marginTop: "-15px;" }}>
+      <p
+        className="copyrightText"
+        style={{ textAlign: "center", marginTop: "-15px;" }}
+      >
         &copy; copyright alomgir » 2024{" "}
       </p>
     </FooterWrapper>
@@ -151,7 +157,7 @@ const FooterWrapper = styled.footer`
     }
   }
   @media (max-width: 570px) {
-    .blank{
+    .blank {
       height: 20px;
     }
     .footer-contents {
@@ -165,10 +171,12 @@ const FooterWrapper = styled.footer`
         }
       }
       ul {
+        width: 100%;
         display: grid !important;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        justify-items: center;
+        align-items: flex-start;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: flex-start;
+        gap: 1rem !important;
         li {
           max-width: 100px;
           width: 100%;
@@ -202,7 +210,7 @@ const FooterWrapper = styled.footer`
         }
       }
     }
-    .copyrightText{
+    .copyrightText {
       font-size: 14px;
       transform: translateY(-10px);
     }

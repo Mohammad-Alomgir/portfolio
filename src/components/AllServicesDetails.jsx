@@ -1,33 +1,51 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import GlobalService from '../components/GlobalService';
+import GlobalService from "../components/GlobalService";
 import ServiceModal from "./ServiceModal";
 import { useState } from "react";
+import { IoIosArrowRoundBack } from "react-icons/io";
 
 const AllServicesDetails = () => {
   const location = useLocation();
   const services = location.state;
-  
+  const navigate = useNavigate();
+
   // State to handle modal visibility and selected service
   const [showModal, setShowModal] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
 
   // Function to handle "Learn more" click
   const handleLearnMore = (service) => {
-    setSelectedService(service);  // Set the clicked service
-    setShowModal(true);  // Open modal
+    setSelectedService(service); // Set the clicked service
+    setShowModal(true); // Open modal
   };
 
   // Function to close the modal
   const handleCloseModal = () => {
-    setShowModal(false);  // Close modal
-    setSelectedService(null);  // Reset selected service
+    setShowModal(false); // Close modal
+    setSelectedService(null); // Reset selected service
   };
 
   return (
     <ServiceDetailsWrapper>
       <div className="container">
         <div className="skill-contents">
+          <Link
+            to={navigate("/")}
+            className="themeButton"
+            style={{ display: "inline-block", paddingBottom: "30px"}}
+          >
+            <span
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "1rem",
+              }}
+            >
+              <IoIosArrowRoundBack style={{ fontSize: "2rem" }} /> Back
+            </span>{" "}
+          </Link>
           <div className="section-heading">
             <h1 className="service-title element">Services</h1>
           </div>
@@ -38,10 +56,13 @@ const AllServicesDetails = () => {
                   key={index}
                   icon={service.img}
                   title={service.title}
-                  des={service.descrition}  // Fixed typo: description
+                  des={service.descrition} // Fixed typo: description
                   services={service}
                 >
-                  <button className="themeButton" onClick={() => handleLearnMore(service)}>
+                  <button
+                    className="themeButton"
+                    onClick={() => handleLearnMore(service)}
+                  >
                     Learn more
                   </button>
                 </GlobalService>
@@ -51,9 +72,9 @@ const AllServicesDetails = () => {
       </div>
       {/* Render modal outside of the service list */}
       {showModal && (
-        <ServiceModal 
-          service={selectedService}  // Pass selected service to modal
-          onClose={handleCloseModal}  // Close modal handler
+        <ServiceModal
+          service={selectedService} // Pass selected service to modal
+          onClose={handleCloseModal} // Close modal handler
         />
       )}
     </ServiceDetailsWrapper>
@@ -61,7 +82,7 @@ const AllServicesDetails = () => {
 };
 
 const ServiceDetailsWrapper = styled.div`
-  padding-top: 12rem;
+  padding-top: 7rem;
   padding-bottom: 4rem;
   .skill-contents {
     width: 100%;
@@ -92,15 +113,15 @@ const ServiceDetailsWrapper = styled.div`
     }
   }
   @media (max-width: 430px) {
-      .skill-contents {
-        .services {
-          display: flex !important;
-          flex-direction: column;
-            .icon {
-              max-width: 40%;
-            }
-          }
+    .skill-contents {
+      .services {
+        display: flex !important;
+        flex-direction: column;
+        .icon {
+          max-width: 40%;
         }
+      }
+    }
   }
 `;
 export default AllServicesDetails;
