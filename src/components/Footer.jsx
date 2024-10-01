@@ -29,19 +29,14 @@ const Footer = () => {
       <div className="right-blank blank"></div>
       <div className="footer-social-blank">
         <div className="social-icons">
-          <a
-            href="https://wa.me/01310395359?text=Your%20pre-filled%20message"
-            target="_blank"
-          >
-            <img src="/assets/images/whatsapp.png" alt="whatsapp" />
-          </a>
-          <a href="">
+         
+          <a href="https://www.linkedin.com/in/mohammad-alomgir" target="_blank">
             <img src="/assets/images/linkdin.png" alt="linkdin" />
           </a>
-          <a href="https://github.com/Mohammad-Alomgir?tab=repositories">
+          <a href="https://github.com/Mohammad-Alomgir?tab=repositories" target="_blank">
             <img src="/assets/images/github.png" alt="github" />
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/alomgirhassanwd/" target="_blank">
             <img src="/assets/images/instagram.png" alt="instagram" />
           </a>
         </div>
@@ -182,12 +177,8 @@ const FooterWrapper = styled.footer`
           width: 100%;
           a {
             font-size: 15px;
-            border: 1px solid ${({ theme }) => theme.colors.bodyBackground};
             padding: 10px 20px;
             border-radius: 5px;
-          }
-          &:last-child {
-            grid-column: 1 / -1;
           }
         }
       }

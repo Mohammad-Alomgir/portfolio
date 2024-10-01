@@ -1,86 +1,153 @@
 [
-  {
-    "id": 1,
-    "img": "assets/images/freelauncingWordpressImage.webp",
-    "title": "Wordpress",
-    "category": "wordpress",
-    "posts": [
+    {
+      "id": 1,
+      "img": "assets/images/freelauncingWordpressImage.webp",
+      "title": "Wordpress",
+      "category": "wordpress",
+      "posts": [
         {
-            "id": 1,
-            "img": "assets/images/wordpressBlog1image.png",
-            "author": "Alomgir",
-            "day": "",
-            "date": "",
-            "title": "Top 5 Wordpress Ecommerce Website Plugin",
-            "description": "1. WooCommerce Subscriptions
-            WooCommerce Subscriptions is a powerful plugin that allows businesses to create and manage products with recurring payments. Ideal for subscription-based services, it enables automatic renewals and flexible billing schedules, including monthly, weekly, or annual payments. This plugin supports a variety of payment gateways and comes with robust features such as free trials, upgrades, downgrades, and email notifications for subscription management. If you're looking to introduce subscription products or services to your WooCommerce store, this plugin is essential."
+          "id": 1,
+          "img": "assets/images/wordpressBlog1image.png",
+          "author": "Alomgir",
+          "day": "",
+          "date": "",
+          "title": "Top 5 WordPress Ecommerce Website Plugins",
+          "description": "Discover the top 5 plugins for creating a successful WordPress eCommerce website. Learn how to maximize features for online stores."
         },
         {
-            "id": 2,
-            "img": "assets/images/3dspeedicon.png",
-            "author": "Alomgir",
-            "day": "",
-            "date": "",
-            "title": "রিয়েল এস্ট্যাট ওয়েবসাইট তৈরির জন্য কোন থিমটা সবচেয়ে বেশি ভালো ?",
-            "description": "রিয়েল এস্ট্যাট ওয়েবসাইট তৈরির জন্য কোন থিমটা সবচেয়ে বেশি ভালো ?রিয়েল এস্ট্যাট ওয়েবসাইট তৈরির জন্য কোন থিমটা সবচেয়ে বেশি ভালো ?রিয়েল এস্ট্যাট ওয়েবসাইট তৈরির জন্য কোন থিমটা সবচেয়ে বেশি ভালো ?রিয়েল এস্ট্যাট ওয়েবসাইট তৈরির জন্য কোন থিমটা সবচেয়ে বেশি ভালো ?রিয়েল এস্ট্যাট ওয়েবসাইট তৈরির জন্য কোন থিমটা সবচেয়ে বেশি ভালো ?রিয়েল এস্ট্যাট ওয়েবসাইট তৈরির জন্য কোন থিমটা সবচেয়ে বেশি ভালো ?"
-
-        }
-    ]
-  },
-  {
-    "id": 2,
-    "img": "assets/images/freelauncingBlogImage.webp",
-    "title": "Freelanching",
-    "category": "freelanching",
-    "posts": [
-        {
-            "id": 1,
-            "img": "assets/images/wordpressBlog1Image.png",
-            "author": "Alomgir",
-            "day": "",
-            "date": "",
-            "title": "Top 5 Wordpress Ecommerce Website Plugin",
-            "description": "Why Woocmmerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce Platform"
-
+          "id": 2,
+          "img": "assets/images/3dspeedicon.png",
+          "author": "Alomgir",
+          "day": "",
+          "date": "",
+          "title": "Best Theme for Real Estate Website",
+          "description": "Explore the best themes to use for building a real estate website. Find out which themes are highly recommended for smooth functionality."
         },
         {
-            "id": 2,
-            "img": "assets/images/3dsecurityicon.png",
-            "author": "Alomgir",
-            "day": "",
-            "date": "",
-            "title": "Why Woocommerce is Best for E-commerce Platform",
-            "description": "Why Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce Platform"
-
-        }
-    ]
-  },
-  {
-    "id": 3,
-    "img": "assets/images/businessBlogImage.jpg",
-    "title": "Business",
-    "category": "Business",
-    "posts": [
-        {
-            "id": 1,
-            "img": "assets/images/3dspeedicon.png",
-            "author": "Alomgir",
-            "day": "",
-            "date": "",
-            "title": "Why Woocommerce is Best for E-commerce Platform",
-            "description": "Why Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce Platform"
-
+          "id": 3,
+          "img": "assets/images/wordpressBlog1image.png",
+          "author": "Alomgir",
+          "day": "",
+          "date": "",
+          "title": "Top 5 WordPress Ecommerce Website Plugins",
+          "description": "Discover the top 5 plugins for creating a successful WordPress eCommerce website. Learn how to maximize features for online stores."
         },
         {
-            "id": 2,
-            "img": "assets/images/3dwordpressicon.png",
-            "author": "Alomgir",
-            "day": "",
-            "date": "",
-            "title": "Why Woocommerce is Best for E-commerce Platform",
-            "description": "Why Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce PlatformWhy Woocommerce is Best for E-commerce Platform"
-
+          "id": 4,
+          "img": "assets/images/3dspeedicon.png",
+          "author": "Alomgir",
+          "day": "",
+          "date": "",
+          "title": "Best Theme for Real Estate Website",
+          "description": "Explore the best themes to use for building a real estate website. Find out which themes are highly recommended for smooth functionality."
+        },
+        {
+          "id": 5,
+          "img": "assets/images/wordpressBlog1image.png",
+          "author": "Alomgir",
+          "day": "",
+          "date": "",
+          "title": "Top 5 WordPress Ecommerce Website Plugins",
+          "description": "Discover the top 5 plugins for creating a successful WordPress eCommerce website. Learn how to maximize features for online stores."
+        },
+        {
+          "id": 6,
+          "img": "assets/images/3dspeedicon.png",
+          "author": "Alomgir",
+          "day": "",
+          "date": "",
+          "title": "Best Theme for Real Estate Website",
+          "description": "Explore the best themes to use for building a real estate website. Find out which themes are highly recommended for smooth functionality."
         }
-    ]
-  }
-]
+      ]
+    },
+    {
+      "id": 2,
+      "img": "assets/images/freelauncingBlogImage.webp",
+      "title": "Freelancing",
+      "category": "freelancing",
+      "posts": [
+        {
+          "id": 1,
+          "img": "assets/images/wordpressBlog1image.png",
+          "author": "Alomgir",
+          "day": "",
+          "date": "",
+          "title": "How to Start Freelancing in Web Development",
+          "description": "Learn the steps to begin freelancing in web development, from creating a portfolio to finding your first client. Start your journey today."
+        },
+        {
+          "id": 2,
+          "img": "assets/images/3dsecurityicon.png",
+          "author": "Alomgir",
+          "day": "",
+          "date": "",
+          "title": "Top Tools Every Freelancer Should Use",
+          "description": "Discover essential tools for freelancers that can help you manage projects, communicate with clients, and deliver quality work efficiently."
+        },
+        {
+          "id": 3,
+          "img": "assets/images/wordpressBlog1image.png",
+          "author": "Alomgir",
+          "day": "",
+          "date": "",
+          "title": "How to Start Freelancing in Web Development",
+          "description": "Learn the steps to begin freelancing in web development, from creating a portfolio to finding your first client. Start your journey today."
+        },
+        {
+          "id": 4,
+          "img": "assets/images/3dsecurityicon.png",
+          "author": "Alomgir",
+          "day": "",
+          "date": "",
+          "title": "Top Tools Every Freelancer Should Use",
+          "description": "Discover essential tools for freelancers that can help you manage projects, communicate with clients, and deliver quality work efficiently."
+        },
+        {
+          "id": 5,
+          "img": "assets/images/wordpressBlog1image.png",
+          "author": "Alomgir",
+          "day": "",
+          "date": "",
+          "title": "How to Start Freelancing in Web Development",
+          "description": "Learn the steps to begin freelancing in web development, from creating a portfolio to finding your first client. Start your journey today."
+        },
+        {
+          "id": 6,
+          "img": "assets/images/3dsecurityicon.png",
+          "author": "Alomgir",
+          "day": "",
+          "date": "",
+          "title": "Top Tools Every Freelancer Should Use",
+          "description": "Discover essential tools for freelancers that can help you manage projects, communicate with clients, and deliver quality work efficiently."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "img": "assets/images/businessBlogImage.jpg",
+      "title": "Business",
+      "category": "business",
+      "posts": [
+        {
+          "id": 1,
+          "img": "assets/images/3dspeedicon.png",
+          "author": "Alomgir",
+          "day": "",
+          "date": "",
+          "title": "Scaling Your Online Business Effectively",
+          "description": "Learn the strategies to scale your online business, including tips on marketing, eCommerce platforms, and customer retention."
+        },
+        {
+          "id": 2,
+          "img": "assets/images/3dwordpressicon.png",
+          "author": "Alomgir",
+          "day": "",
+          "date": "",
+          "title": "How to Build a Strong Business Website",
+          "description": "Explore the key elements of building a strong business website that attracts customers, drives traffic, and generates leads."
+        }
+      ]
+    }
+  ]
+  
