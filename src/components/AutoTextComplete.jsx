@@ -12,7 +12,11 @@ const ExampleComponent = () => {
         'A REACT DEVELOPER',
         1000,
         'A EMAIL SIGNATURE EXPERT',
-        1000
+        1000,
+        'Wordpress developer',
+        1000,
+        'Elementor expert',
+        1000,
       ]}
       wrapper="span"
       speed={50}

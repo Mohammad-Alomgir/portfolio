@@ -15,7 +15,7 @@ const ServiceModal = ({ service, onClose }) => {
     </ModalWrapper>
   );
 };
-
+s
 const ModalWrapper = styled.div`
   position: fixed;
   top: 10%;

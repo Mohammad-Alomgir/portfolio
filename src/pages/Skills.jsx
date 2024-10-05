@@ -80,7 +80,7 @@ const SkillWrapper = styled.section`
       }
     }
   }
-  @media (max-width: 430px) {
+  @media (max-width: 570px) {
     .service-container {
       .skill-contents {
         .services {

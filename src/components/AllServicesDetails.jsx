@@ -33,7 +33,7 @@ const AllServicesDetails = () => {
           <Link
             to={navigate("/")}
             className="themeButton"
-            style={{ display: "inline-block", paddingBottom: "30px"}}
+            style={{ display: "inline-block", marginBottom: "30px"}}
           >
             <span
               style={{
@@ -59,12 +59,15 @@ const AllServicesDetails = () => {
                   des={service.descrition} // Fixed typo: description
                   services={service}
                 >
-                  <button
+                  <Link
                     className="themeButton"
-                    onClick={() => handleLearnMore(service)}
+                    onClick={() => {
+                      console.log("service modal click");
+                      handleLearnMore(service);
+                    }}
                   >
                     Learn more
-                  </button>
+                  </Link>
                 </GlobalService>
               ))}
           </div>

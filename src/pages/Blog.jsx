@@ -10,7 +10,7 @@ const Blog = () => {
       .then((res) => res.json())
       .then((blogs) => setBlogs(blogs));
   }, []);
-  console.log(blogs && blogs,"alomgir blogs")
+  console.log(blogs && blogs, "alomgir blogs");
   return (
     <BlogWrapper id="Blog">
       <div className="container">
@@ -24,10 +24,17 @@ const Blog = () => {
                 <img src={blog.img} alt={blog.img} />
                 <div className="blog-body">
                   <h1>{blog.title}</h1>
-                  <Link to="/categoryblogs" className="themeButton" blogId={blog.id} state={{
-                    blogId: blog.id,
-                    blog: blogs
-                  }}>Show All</Link>
+                  <Link
+                    to="/categoryblogs"
+                    className="themeButton"
+                    blogId={blog.id}
+                    state={{
+                      blogId: blog.id,
+                      blog: blogs,
+                    }}
+                  >
+                    Show All
+                  </Link>
                 </div>
               </div>
             ))}
@@ -38,13 +45,15 @@ const Blog = () => {
 };
 const BlogWrapper = styled.div`
   padding: 8rem 0;
+  
   .container {
     .blogs {
       margin-top: 8rem;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr; // Default for larger screens
       gap: 3rem;
       transition: 0.9s;
+
       .blog {
         background-image: linear-gradient(
           #130428 7%,
@@ -54,23 +63,25 @@ const BlogWrapper = styled.div`
           85%,
           #190634 100%
         );
-        /* padding: 10px 15px 50px 15px; */
         border-radius: 30px;
         position: relative;
         transition: 0.9s;
         overflow: hidden;
+
         img {
           height: 100%;
           background-color: ${({ theme }) => theme.colors.textSecoundary};
           border-radius: 30px;
           transition: 0.9s;
         }
-        &:hover .blog-body{
+
+        &:hover .blog-body {
           opacity: 0.8;
           visibility: visible;
           bottom: 0;
           transition: 0.9s;
         }
+
         .blog-body {
           position: absolute;
           background-color: #38126d;
@@ -83,9 +94,6 @@ const BlogWrapper = styled.div`
           visibility: hidden;
           transition: 1s;
 
-          /* border-top-left-radius: 30px;
-          border-top-right-radius: 30px; */
-
           h1 {
             font-size: 2rem;
             margin-bottom: 20px;
@@ -94,5 +102,18 @@ const BlogWrapper = styled.div`
       }
     }
   }
+
+  @media (max-width: 570px) {
+    .container{
+      .blogs {
+      margin-top: 8rem;
+      display: grid;
+      grid-template-columns: 1fr; // Single column for mobile
+      gap: 3rem;
+      transition: 0.9s;
+    }
+    }
+  }
 `;
+
 export default Blog;
