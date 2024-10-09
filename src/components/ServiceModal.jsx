@@ -9,7 +9,7 @@ const ServiceModal = ({ service, onClose }) => {
       <div className="modal-content">
         <img src={service.img} alt={service.title} />  {/* Added alt text */}
         <h2>{service.title}</h2>  {/* Display service title */}
-        <p>{service.description}</p>  {/* Corrected typo in 'description' */}
+        <p>{service.descrition}</p>  {/* Corrected typo in 'description' */}
         <button onClick={onClose} className="close-button">Close</button>
       </div>
     </ModalWrapper>
