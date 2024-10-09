@@ -8,6 +8,7 @@ const CategoryBlogs = () => {
   const location = useLocation();
   const posts = location.state.blog;
   const blogId = location.state.blogId;
+  console.log(blogId);
   const navigate = useNavigate();
 
   const goBack = () => {
@@ -30,7 +31,9 @@ const CategoryBlogs = () => {
   return (
     <CategoryBlogWrapper>
       <div className="container">
-        <button onClick={goBack} className="themeButton">back</button>
+        <button onClick={goBack} className="themeButton">
+          back
+        </button>
         <div className="posts">
           {selectedCategory &&
             selectedCategory.posts &&
@@ -40,7 +43,13 @@ const CategoryBlogs = () => {
                 <div className="blog-body">
                   <h1>{blog.title}</h1>
                   <p>{blog.description.slice(1, 200)}</p>
-                  <Link to="/singleBlogPage" className="themeButton" state={blog}>Show All</Link>
+                  <Link
+                    to="/singleBlogPage"
+                    className="themeButton"
+                    state={blog}
+                  >
+                    Show All
+                  </Link>
                 </div>
               </div>
             ))}
@@ -50,15 +59,22 @@ const CategoryBlogs = () => {
             <h1 className="element">May you be interested</h1>
           </div>
           <div className="related-category-posts">
-            {relatedCategory && relatedCategory.map((relatedCategory) => (
-              <div key={relatedCategory.id} className="related-category-blog">
-                <img src={relatedCategory.img} alt={relatedCategory.img} />
-                <div className="related-category-blog-body">
-                  <h1>{relatedCategory.title}</h1>
-                  <Link to="/categoryblogs" className="themeButton" blogId={relatedCategory.id} state={{ blogId: relatedCategory.id, blog: posts }}>Show All</Link>
+            {relatedCategory &&
+              relatedCategory.map((relatedCategory) => (
+                <div key={relatedCategory.id} className="related-category-blog">
+                  <img src={relatedCategory.img} alt={relatedCategory.img} />
+                  <div className="related-category-blog-body">
+                    <h1>{relatedCategory.title}</h1>
+                    <Link
+                      to="/categoryblogs"
+                      className="themeButton"
+                      state={{ currentBlogId: relatedCategory.id, blog: posts }} // Renamed blogId to avoid DOM issues
+                    >
+                      Show All
+                    </Link>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </div>
@@ -77,7 +93,14 @@ const CategoryBlogWrapper = styled.div`
       gap: 3rem;
 
       .blog {
-        background-image: linear-gradient(#130428 7%, #251043 34%, #38126d 57%, #261045, 85%, #190634 100%);
+        background-image: linear-gradient(
+          #130428 7%,
+          #251043 34%,
+          #38126d 57%,
+          #261045,
+          85%,
+          #190634 100%
+        );
         border-radius: 15px;
         padding: 10px 20px;
         transition: 0.9s;
@@ -122,7 +145,14 @@ const CategoryBlogWrapper = styled.div`
         gap: 3rem;
 
         .related-category-blog {
-          background-image: linear-gradient(#130428 7%, #251043 34%, #38126d 57%, #261045, 85%, #190634 100%);
+          background-image: linear-gradient(
+            #130428 7%,
+            #251043 34%,
+            #38126d 57%,
+            #261045,
+            85%,
+            #190634 100%
+          );
           border-radius: 30px;
           position: relative;
           transition: 0.9s;

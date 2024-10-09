@@ -11,8 +11,8 @@ const AllProject = () => {
   return (
     <>
     <AllProjectWrapper>
-      <Link
-        to={navigate("/")}
+      <button
+        onClick={() => navigate("/")}
         className="themeButton"
         style={{ display: "inline-block" }}
       >
@@ -26,7 +26,7 @@ const AllProject = () => {
         >
           <IoIosArrowRoundBack style={{ fontSize: "2rem" }} /> Back
         </span>{" "}
-      </Link>
+      </button>
       <div className="project-field">
         {location &&
           location.state.map((project, index) =>

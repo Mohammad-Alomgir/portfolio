@@ -7,20 +7,19 @@ const ServiceModal = ({ service, onClose }) => {
   return (
     <ModalWrapper>
       <div className="modal-content">
-        <img src={service.img} alt="" />
+        <img src={service.img} alt={service.title} />  {/* Added alt text */}
         <h2>{service.title}</h2>  {/* Display service title */}
-        <p>{service.descrition}</p>  {/* Display service description */}
+        <p>{service.description}</p>  {/* Corrected typo in 'description' */}
         <button onClick={onClose} className="close-button">Close</button>
       </div>
     </ModalWrapper>
   );
 };
-s
+
 const ModalWrapper = styled.div`
   position: fixed;
   top: 10%;
   left: 50%;
-  overflow: auto;
   transform: translate(-50%, 0);
   z-index: 100000009;  // Ensure modal is on top
   background: purple;
