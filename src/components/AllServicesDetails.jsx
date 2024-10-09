@@ -2,22 +2,25 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import GlobalService from "../components/GlobalService";
 import ServiceModal from "./ServiceModal";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowRoundBack } from "react-icons/io";
 
 const AllServicesDetails = () => {
   const location = useLocation();
-  const services = location.state;  // Get services data passed from the previous page
+  const services = location.state; // Get services data passed from the previous page
   const navigate = useNavigate();
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // State to handle modal visibility and selected service
   const [showModal, setShowModal] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
 
   // Function to handle "Learn more" click
   const handleLearnMore = (service) => {
-    console.log('Clicked service:', service); // Debugging to check service data
+    console.log("Clicked service:", service); // Debugging to check service data
     setSelectedService(service); // Set the clicked service
+    console.log("service", services);
     setShowModal(true); // Open modal
   };
 
@@ -32,7 +35,9 @@ const AllServicesDetails = () => {
       <div className="container">
         <div className="skill-contents">
           <button
-            onClick={() => {navigate("/")}}
+            onClick={() => {
+              navigate("/");
+            }}
             className="themeButton"
             style={{ display: "inline-block", marginBottom: "30px" }}
           >
@@ -51,7 +56,6 @@ const AllServicesDetails = () => {
           <div className="section-heading">
             <h1 className="service-title element">Services</h1>
           </div>
-
           <div className="services">
             {services &&
               services.map((service, index) => (
@@ -59,14 +63,15 @@ const AllServicesDetails = () => {
                   key={index}
                   icon={service.img}
                   title={service.title}
-                  des={service.descrition}  // Fixed typo: 'description'
+                  des={service.descrition} // Fixed typo: 'description'
                   services={service}
                 >
                   <Link
                     className="themeButton"
                     onClick={() => {
-                      handleLearnMore(service);  // Correctly call the modal open function
+                      handleLearnMore(service); // Correctly call the modal open function
                     }}
+                    state={services}
                   >
                     Learn more
                   </Link>

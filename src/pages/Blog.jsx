@@ -27,7 +27,6 @@ const Blog = () => {
                   <Link
                     to="/categoryblogs"
                     className="themeButton"
-                    blogId={blog.id}
                     state={{
                       blogId: blog.id,
                       blog: blogs,

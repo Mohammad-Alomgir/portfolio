@@ -9,12 +9,15 @@ const CategoryBlogs = () => {
   const posts = location.state.blog;
   const blogId = location.state.blogId;
   console.log(blogId);
+  console.log(blogId);
   const navigate = useNavigate();
 
   const goBack = () => {
     navigate(-1);
   };
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   useEffect(() => {
     let relatedCategory = [];
     posts &&
@@ -68,7 +71,7 @@ const CategoryBlogs = () => {
                     <Link
                       to="/categoryblogs"
                       className="themeButton"
-                      state={{ currentBlogId: relatedCategory.id, blog: posts }} // Renamed blogId to avoid DOM issues
+                      state={{ blogId: relatedCategory.id, blog: posts }} // Renamed blogId to avoid DOM issues
                     >
                       Show All
                     </Link>
