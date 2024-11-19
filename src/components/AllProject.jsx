@@ -14,44 +14,46 @@ const AllProject = () => {
   return (
     <>
       <AllProjectWrapper>
-        <button
-          onClick={() => navigate("/")}
-          className="themeButton"
-          style={{ display: "inline-block" }}
-        >
-          <span
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "1rem",
-            }}
+        <div className="container">
+          <button
+            onClick={() => navigate("/")}
+            className="themeButton"
+            style={{ display: "inline-block" }}
           >
-            <IoIosArrowRoundBack style={{ fontSize: "2rem" }} /> Back
-          </span>{" "}
-        </button>
-        <div className="project-field">
-          {location &&
-            location.state.map((project, index) =>
-              project.category === "emailsignature" ? (
-                project.emailSignatures.map((emailSignature, sigIndex) => (
-                  <SignatureContainer
-                    key={sigIndex}
-                    img={emailSignature.img}
-                    className={emailSignature.className}
-                  />
-                ))
-              ) : (
-                <div key={index} className="projects-cards">
-                  <Project
-                  img={project.img}
-                  title={project.title}
-                  path="/websitecategory"
-                  websites={project.websites}
-                />
-                </div>
-              )
-            )}
+            <span
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "1rem",
+              }}
+            >
+              <IoIosArrowRoundBack style={{ fontSize: "2rem" }} /> Back
+            </span>{" "}
+          </button>
+          <div className="project-field">
+            {location &&
+              location.state.map((project, index) =>
+                project.category === "emailsignature" ? (
+                  project.emailSignatures.map((emailSignature, sigIndex) => (
+                    <SignatureContainer
+                      key={sigIndex}
+                      img={emailSignature.img}
+                      className={emailSignature.className}
+                    />
+                  ))
+                ) : (
+                  <div key={index} className="projects-cards">
+                    <Project
+                      img={project.img}
+                      title={project.title}
+                      path="/websitecategory"
+                      websites={project.websites}
+                    />
+                  </div>
+                )
+              )}
+          </div>
         </div>
       </AllProjectWrapper>
     </>
@@ -89,6 +91,27 @@ const AllProjectWrapper = styled.div`
   }
   @media (max-width: 430px) {
     padding: 6rem 1rem 1rem 1rem;
+    .project-field {
+    padding-top: 3rem;
+    margin: 0 auto;
+    max-width: 1100px;
+    display: block;
+    
+
+    /* Project components will span the full width */
+
+    .project-item {
+      grid-column: 1 / -1;
+      margin-bottom: 4rem;
+    }
+
+    /* Signature components will take up 1/3 of the row */
+    .signature-item {
+      width: 100%;
+      object-fit: cover;
+      gap: 3px;
+    }
+  }
   }
 `;
 
