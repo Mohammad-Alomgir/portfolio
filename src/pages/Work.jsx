@@ -48,26 +48,40 @@ const Work = ({
   // Check whether more email signature have or not
 
   const hasMoreEmailSignatures = () => {
-    const hasMoreEmailSignature = projects && projects.map((project) => {
-      if (
-        project.category === "emailsignature" &&
-        project.emailSignatures && project.emailSignatures.length > numberOfEmailSignature
-      ) {
-       console.log(project.category)
-        return true;
-      } else {
-        console.log(showLoadMore,project.category,project.emailSignatures,numberOfEmailSignature)
-        return false;
-      }
-    });
+    const hasMoreEmailSignature =
+      projects &&
+      projects.map((project) => {
+        if (
+          project.category === "emailsignature" &&
+          project.emailSignatures &&
+          project.emailSignatures.length > numberOfEmailSignature
+        ) {
+          console.log(project.category);
+          return true;
+        } else {
+          console.log(
+            showLoadMore,
+            project.category,
+            project.emailSignatures,
+            numberOfEmailSignature
+          );
+          return false;
+        }
+      });
     setIsAvailableNumberOfEmailSignature(hasMoreEmailSignature);
-  }
+  };
 
   const displayedProjects = () => {
     return showAllProjects && projectNumber < filterableProject.length
       ? filterableProject.slice(0, Number(projectNumber))
       : filterableProject;
   };
+  console.log(
+    "filterable-project",
+    filterableProject,
+    "displayed project",
+    displayedProjects
+  );
   return (
     <WorkWrapper id="work">
       <div className="container">
@@ -95,15 +109,6 @@ const Work = ({
                 <li
                   onClick={(e) => {
                     e.preventDefault();
-                    setSelectedCategory("webapplication");
-                    setIsAvailableNumberOfEmailSignature(false)
-                  }}
-                >
-                  <a href="#">Web Application</a>
-                </li>
-                <li
-                  onClick={(e) => {
-                    e.preventDefault();
                     setSelectedCategory("website");
                   }}
                 >
@@ -114,7 +119,7 @@ const Work = ({
                     e.preventDefault();
                     setSelectedCategory("emailsignature");
                     setShowLoadMore(true);
-                    hasMoreEmailSignatures()
+                    hasMoreEmailSignatures();
                   }}
                 >
                   <a href="#">Email Signature</a>
@@ -122,23 +127,36 @@ const Work = ({
               </ul>
             </div>
             <div className="projects">
-              {displayedProjects().length > 0 &&
-                displayedProjects().map((project, index) =>
-                  project.category !== "emailsignature" ? (
-                    <div className="project-cards" key={index}>
+              {/* Render Project Cards Only */}
+              {displayedProjects().some(
+                (project) => project.category !== "emailsignature"
+              ) && (
+                <div className="projects-cards">
+                  {displayedProjects()
+                    .filter((project) => project.category !== "emailsignature")
+                    .map((project, index) => (
+                      <div className="project-card" key={index}>
+                        <Project
+                          filterableProject={filterableProject}
+                          img={project.img}
+                          title={project.title}
+                          websites={project.websites}
+                          path="/websitecategory"
+                        />
+                      </div>
+                    ))}
+                </div>
+              )}
 
-                      <Project
-                        filterableProject={filterableProject}
-                        img={project.img}
-                        title={project.title}
-                        description={project.description}
-                        link={project.link}
-                        technology={project.usedTecnology ? project.usedTecnology : []}
-                      />
-                    </div>
-                  ) : (
-                    <div className="for-email-signatures" key={index}>
-                      {project.emailSignatures
+              {/* Render Email Signatures Only */}
+              {displayedProjects().some(
+                (project) => project.category === "emailsignature"
+              ) && (
+                <div className="for-email-signatures">
+                  {displayedProjects()
+                    .filter((project) => project.category === "emailsignature")
+                    .flatMap((project) =>
+                      project.emailSignatures
                         .slice(
                           0,
                           project.emailSignatures.length >
@@ -152,10 +170,10 @@ const Work = ({
                             key={index}
                             className={emailSignature.className}
                           />
-                        ))}
-                    </div>
-                  )
-                )}
+                        ))
+                    )}
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -204,17 +222,24 @@ const WorkWrapper = styled.section`
       }
     }
     .projects {
-      display: flex;
-      gap: 4rem;
-      flex-direction: column;
+      .projects-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        /* padding: 20px; */
+        justify-content: space-between;
+        align-items: center;
+        /* row-gap: 3rem; */
+        justify-items: center;
+        align-content: space-between;
+      }
 
       .project-cards {
-        display: grid;
-        grid-template-columns: 1fr;
+        width: 230px;
+        border: none;
       }
       .for-email-signatures {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 3px;
       }
     }

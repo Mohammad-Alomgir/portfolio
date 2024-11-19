@@ -1,75 +1,70 @@
 import styled, { keyframes } from "styled-components";
 import Button from "./Button";
 import { Link } from "react-router-dom";
-const Project = ({
-  className,
-  img,
-  title,
-  description,
-  filterableProject,
-  technology,
-  link,
-}) => {
+const Project = ({ filterableProject, img, title, websites, path }) => {
+  console.log(websites,"websites");
   return (
-    <ProjectWrapper className={`project ${className}`}>
-      <Link
-        to={link.websiteLink}
-        target="_blank"
-        state={filterableProject}
-        className="project-image-links"
-      >
-        <img src={img} alt="Project1" className="project-image" />
-      </Link>
-      <div className="project-info">
-        <h1 className="title">{title}</h1>
-        <p>{description}</p>
-        <div className="btn-group">
-          <a
-            className="themeButton"
-            href={link.githubLink ? link.githubLink : "https://github.com/Mohammad-Alomgir?tab=repositories"}
-            target="_blank"
-          >
-            Get Code
-          </a>
-          <a
-            className="themeButton"
-            href={link.websiteLink && link.websiteLink}
-            target="_blank"
-          >
-            Live Demo
-          </a>
-        </div>
-        <div className="technology-used-group">
-          {technology.map((item, index) => (
-            <img src={item.img} key={index} />
-          ))}
-        </div>
+    <ProjectWrapper className={`project`}>
+      <div className="image-container">
+        <Link
+          to={path}
+          state={websites}
+          rel="noopener noreferrer"
+          className="project-card"
+        >
+          <div className="image-wrapper">
+            <img
+              src={img}
+              alt={`${title} Screenshot`}
+              className="project-image"
+            />
+          </div>
+        </Link>
       </div>
+      <h2>{title}</h2>
     </ProjectWrapper>
   );
 };
 const ProjectWrapper = styled.div`
+  .image-container{
+    width: 225px;
+    height: 230px;
+    border: 1px solid #6f2bce;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+  }
+   h2 {
+    font-size: 18px;
+    margin: 13px 0;
+    color: #6f2bce;
+    font-weight: 900;
+    
+    text-align: center;
+}
+  
   display: flex;
-  justify-content: left;
-  align-items: center;
-  padding-right: 15px;
-  gap: 2rem;
-  border: 1px dashed ${({ theme }) => theme.colors.borderColorPrimary};
-  border-radius: 18px;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   /* padding-bottom: 15px; */
-  a.project-image-links {
+  a{
     /* max-width: 800px; */
     width: 100%;
-    height: 250px;
-    overflow: hidden;
-    border-top-left-radius: 18px;
-    border-bottom-left-radius: 18px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     img.project-image {
       background-size: cover;
       width: 100%;
       height: 100%;
-      border-top-left-radius: 18px;
-      border-bottom-left-radius: 18px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
     }
     img.project-image:hover {
       transform: scale(1.1);

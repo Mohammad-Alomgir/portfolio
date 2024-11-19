@@ -42,15 +42,14 @@ const AllProject = () => {
                   />
                 ))
               ) : (
-                <Project
-                  key={index}
+                <div key={index} className="projects-cards">
+                  <Project
                   img={project.img}
                   title={project.title}
-                  description={project.description}
-                  link={project.link}
-                  technology={project.usedTecnology}
-                  className="project-item"
+                  path="/websitecategory"
+                  websites={project.websites}
                 />
+                </div>
               )
             )}
         </div>

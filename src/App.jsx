@@ -14,6 +14,7 @@ import "aos/dist/aos.css"; // Import the AOS CSS
 import AllServicesDetails from "./components/AllServicesDetails";
 import CategoryBlogs from "./components/CategoryBlogs";
 import SingleBlogPage from './components/SingleBlogPage'
+import WebsiteCategory from "./components/WebsiteCategory";
 
 function App() {
   // const [loading, setLoading] = useState(true);
@@ -66,6 +67,7 @@ function App() {
           <Route path="/allservicedetails" element={<AllServicesDetails />} />
           <Route path="/categoryblogs" element={<CategoryBlogs />} />
           <Route path="/singleblogpage" element={<SingleBlogPage />} />
+          <Route path="/websitecategory" element={<WebsiteCategory />} />
         </Routes>
         <GoToTop />
         <Footer />
