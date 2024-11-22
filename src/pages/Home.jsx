@@ -14,7 +14,7 @@ const Home = () => {
       <Hero />
       <About />
       <Skills />
-      <Work showAllProjects={true} projectNumber="5" numberOfEmailSignature="4"/>
+      <Work showAllProjects={true} projectNumber="9" numberOfEmailSignature="4"/>
       <Blog />
       <Testimonials />
       <Contact />

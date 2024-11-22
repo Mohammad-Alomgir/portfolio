@@ -31,7 +31,7 @@ const AllProject = () => {
               <IoIosArrowRoundBack style={{ fontSize: "2rem" }} /> Back
             </span>{" "}
           </button>
-          <div className="project-field">
+          <div className="projects-cards">
             {location &&
               location.state.map((project, index) =>
                 project.category === "emailsignature" ? (
@@ -68,7 +68,7 @@ const AllProjectWrapper = styled.div`
     margin: 0 auto;
     max-width: 1100px;
     display: grid;
-    gap: 3px;
+    gap: 1rem;
 
     /* Define a general grid layout */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

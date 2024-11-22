@@ -1,15 +1,15 @@
 [
   {
     "id": 1,
-    "img": "/assets/images/realstate.jpg",
-    "title": "Realstate landing page",
+    "img": "/assets/images/heroscreenshot.jpg",
+    "title": "Travel",
     "category": "website",
      "websites": [
       {
         "id": 1,
-        "title": "Hotel booking website",
+        "title": "Travel",
         "img": "/assets/images/construction.jpg",
-        "liveLink": "www.facebook.com"
+        "liveLink": "https://www.facebook.com"
 
       }
      ]
@@ -66,6 +66,36 @@
       {
         "id": 1,
         "title": "law agency website one",
+        "img": "/assets/images/construction.jpg",
+        "liveLink": "www.facebook.com"
+
+      }
+     ]
+  },
+  {
+    "id": 6,
+    "img": "/assets/images/realstate.jpg",
+    "title": "ecommerce website",
+    "category": "website",
+     "websites": [
+      {
+        "id": 1,
+        "title": "ecommerce website one",
+        "img": "/assets/images/construction.jpg",
+        "liveLink": "www.facebook.com"
+
+      }
+     ]
+  },
+  {
+    "id": 6,
+    "img": "/assets/images/realstate.jpg",
+    "title": "ecommerce website",
+    "category": "website",
+     "websites": [
+      {
+        "id": 1,
+        "title": "ecommerce website one",
         "img": "/assets/images/construction.jpg",
         "liveLink": "www.facebook.com"
 

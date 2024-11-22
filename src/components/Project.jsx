@@ -1,16 +1,27 @@
 import styled, { keyframes } from "styled-components";
 import Button from "./Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Project = ({ filterableProject, img, title, websites, path }) => {
-  console.log(websites,"websites");
+  const navigate = useNavigate();
+  const handleClick = (e) => {
+    e.preventDefault();
+    if (path.startsWith("http")) {
+      // If the path is an external URL
+      window.open(path, "_blank", "noopener,noreferrer");
+    } else {
+      // For internal links, use a navigate or Link component
+      navigate(path, { state: websites });
+    }
+  };
+
+
   return (
     <ProjectWrapper className={`project`}>
       <div className="image-container">
-        <Link
-          to={path}
-          state={websites}
-          rel="noopener noreferrer"
+        <div
           className="project-card"
+          onClick={handleClick}
+          style={{ cursor: "pointer" }}
         >
           <div className="image-wrapper">
             <img
@@ -19,30 +30,34 @@ const Project = ({ filterableProject, img, title, websites, path }) => {
               className="project-image"
             />
           </div>
-        </Link>
+        </div>
       </div>
       <h2>{title}</h2>
     </ProjectWrapper>
   );
 };
 const ProjectWrapper = styled.div`
-  .image-container{
+  .image-container {
     width: 225px;
     height: 230px;
     border: 1px solid #6f2bce;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     overflow: hidden;
+    .project-card{
+      width: 100%;
+      height: 100%;
+    }
   }
-   h2 {
+  h2 {
     font-size: 18px;
     margin: 13px 0;
     color: #6f2bce;
     font-weight: 900;
-    
+
     text-align: center;
-}
-  
+  }
+
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -53,7 +68,7 @@ const ProjectWrapper = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   /* padding-bottom: 15px; */
-  a{
+  a {
     /* max-width: 800px; */
     width: 100%;
 
@@ -130,6 +145,13 @@ const ProjectWrapper = styled.div`
     }
   }
   @media (max-width: 570px) {
+    .image-container{
+      width: 100%;
+      height: 350px;
+    }
+    h2{
+      font-size: 1.5rem;
+    }
     z-index: 99;
     position: relative;
     padding-right: 0;
