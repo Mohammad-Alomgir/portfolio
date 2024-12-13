@@ -5,7 +5,7 @@ const Project = ({ filterableProject, img, title, websites, path }) => {
   const navigate = useNavigate();
   const handleClick = (e) => {
     e.preventDefault();
-    if (path.startsWith("http")) {
+    if (path.startsWith("https")) {
       // If the path is an external URL
       window.open(path, "_blank", "noopener,noreferrer");
     } else {

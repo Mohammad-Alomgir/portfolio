@@ -13,10 +13,10 @@ const WebsiteCategory = () => {
   return (
     <WebsiteCategoryWrapper>
       <div className="container">
-      <button
+        <button
           onClick={() => navigate("/")}
           className="themeButton"
-          style={{ display: "inline-block", marginBottom: "3rem"}}
+          style={{ display: "inline-block", marginBottom: "3rem" }}
         >
           <span
             style={{
@@ -29,25 +29,35 @@ const WebsiteCategory = () => {
             <IoIosArrowRoundBack style={{ fontSize: "2rem" }} /> Back
           </span>{" "}
         </button>
-        {Array.isArray(state) && state.length !== 0 ? (
-          state.map((website, index) => (
-            <div key={index} className="projects-cards">
+        <div className="projects-cards">
+          {Array.isArray(state) && state.length !== 0 ? (
+            state.map((website, index) => (
               <Project
+                key={index}
                 title={website.title}
                 img={website.img}
                 path={website.liveLink}
               />
-            </div>
-          ))
-        ) : (
-          <p>No websites available</p>
-        )}
+            ))
+          ) : (
+            <p>No websites available</p>
+          )}
+        </div>
       </div>
     </WebsiteCategoryWrapper>
   );
 };
 const WebsiteCategoryWrapper = styled.div`
   padding-top: 8rem;
-
-`
+  .projects-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        /* padding: 20px; */
+        justify-content: space-between;
+        align-items: center;
+        /* row-gap: 3rem; */
+        justify-items: center;
+        align-content: space-between;
+      }
+`;
 export default WebsiteCategory;

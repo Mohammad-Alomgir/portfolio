@@ -2,118 +2,56 @@
   {
     "id": 1,
     "img": "/assets/images/heroscreenshot.jpg",
-    "title": "Travel",
+    "title": "Business",
     "category": "website",
      "websites": [
       {
         "id": 1,
         "title": "Travel",
-        "img": "/assets/images/construction.jpg",
-        "liveLink": "https://www.facebook.com"
+        "img": "/assets/images/travel.png",
+        "liveLink": "https://alomgironlinestore.netlify.app"
+
+      },
+      {
+        "id": 2,
+        "title": "Construction solution",
+        "img": "/assets/images/construction.png",
+        "liveLink": "https://alomgir-construction-center.netlify.app"
+
+      },
+      {
+        "id": 3,
+        "title": "Real estate",
+        "img": "/assets/images/realestate.png",
+        "liveLink": "https://alomgir-real-state.netlify.app"
+
+      },
+      {
+        "id": 4,
+        "title": "Dental Solution",
+        "img": "/assets/images/dental.png",
+        "liveLink": "https://dentalinbangladesh.netlify.app"
+
+      },
+      {
+        "id": 4,
+        "title": "Retail & Wholesale",
+        "img": "/assets/images/wholesale business.png",
+        "liveLink": "https://abcamazon.com"
 
       }
      ]
   },
   {
     "id": 2,
-    "img": "/assets/images/realstate.jpg",
-    "title": "Travel landing page",
+    "img": "/assets/images/ecommerce1.png",
+    "title": "Ecommerce",
     "category": "website",
      "websites": [
       { "id": 1,
-        "title": "travel website one",
+        "title": "",
         "img": "/assets/images/construction.jpg",
-        "liveLink": "www.facebook.com"
-      }
-     ]
-  },
-  {
-    "id": 3,
-    "img": "/assets/images/realstate.jpg",
-    "title": "agency website",
-    "category": "website",
-     "websites": [
-      {
-        "id": 1,
-        "title": "agency website one",
-        "img": "/assets/images/construction.jpg",
-        "liveLink": "www.facebook.com"
-
-      }
-     ]
-  },
-  {
-    "id": 4,
-    "img": "/assets/images/realstate.jpg",
-    "title": "sas website",
-    "category": "website",
-     "websites": [
-      {
-        "id": 1,
-        "title": "sas website one",
-        "img": "/assets/images/construction.jpg",
-        "liveLink": "https://www.facebook.com"
-
-      }
-     ]
-  },
-  {
-    "id": 5,
-    "img": "/assets/images/realstate.jpg",
-    "title": "law agency website",
-    "category": "website",
-     "websites": [
-      {
-        "id": 1,
-        "title": "law agency website one",
-        "img": "/assets/images/construction.jpg",
-        "liveLink": "www.facebook.com"
-
-      }
-     ]
-  },
-  {
-    "id": 6,
-    "img": "/assets/images/realstate.jpg",
-    "title": "ecommerce website",
-    "category": "website",
-     "websites": [
-      {
-        "id": 1,
-        "title": "ecommerce website one",
-        "img": "/assets/images/construction.jpg",
-        "liveLink": "www.facebook.com"
-
-      }
-     ]
-  },
-  {
-    "id": 6,
-    "img": "/assets/images/realstate.jpg",
-    "title": "ecommerce website",
-    "category": "website",
-     "websites": [
-      {
-        "id": 1,
-        "title": "ecommerce website one",
-        "img": "/assets/images/construction.jpg",
-        "liveLink": "www.facebook.com"
-
-      }
-     ]
-  },
-  {
-    "id": 6,
-    "img": "/assets/images/realstate.jpg",
-    "title": "ecommerce website",
-    "category": "website",
-     "websites": [
-      {
-        "id": 1,
-        "title": "ecommerce website one",
-        "img": "/assets/images/construction.jpg",
-        "liveLink": "www.facebook.com"
-
+        "liveLink": "https://alomgironlinestore.netlify.app"
       }
      ]
   },
