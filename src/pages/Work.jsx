@@ -223,18 +223,17 @@ const WorkWrapper = styled.section`
     }
     .projects {
       .projects-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        /* padding: 20px; */
-        justify-content: space-between;
-        align-items: center;
-        /* row-gap: 3rem; */
-        justify-items: center;
-        align-content: space-between;
-      }
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    justify-items: center;
+    align-content: space-between;
+}
 
       .project-cards {
-        width: 230px;
+        width: 350px;
         border: none;
       }
       .for-email-signatures {
@@ -245,7 +244,9 @@ const WorkWrapper = styled.section`
     }
   }
   @media (max-width: 998px) {
-    .projects-area {
+    .container{
+      .container-contents{
+        .projects-area {
       padding: 1rem 1rem 5rem !important;
       .projects-menu-links {
         ul {
@@ -258,9 +259,14 @@ const WorkWrapper = styled.section`
         }
       }
     }
+      }
+    }
+   
   }
   @media (max-width: 570px) {
-    .projects-area {
+    .container{
+      .container-contents{
+        .projects-area {
       padding: 0 1rem;
       .projects-menu-links {
         margin-top: 5px;
@@ -291,12 +297,16 @@ const WorkWrapper = styled.section`
       .projects {
         .project-cards {
           gap: 4rem;
+          grid-template-columns: 1fr !important;
         }
         .for-email-signatures {
           grid-template-columns: 1fr;
         }
       }
     }
+      }
+    }
+    
   }
 `;
 

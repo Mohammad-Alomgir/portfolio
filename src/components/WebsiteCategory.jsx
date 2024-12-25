@@ -51,13 +51,21 @@ const WebsiteCategoryWrapper = styled.div`
   padding-top: 8rem;
   .projects-cards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         /* padding: 20px; */
         justify-content: space-between;
         align-items: center;
         /* row-gap: 3rem; */
         justify-items: center;
         align-content: space-between;
+    
+      
       }
+  @media (max-width: 570px){
+    .projects-cards{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+
 `;
 export default WebsiteCategory;

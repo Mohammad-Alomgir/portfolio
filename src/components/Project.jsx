@@ -38,8 +38,8 @@ const Project = ({ filterableProject, img, title, websites, path }) => {
 };
 const ProjectWrapper = styled.div`
   .image-container {
-    width: 225px;
-    height: 230px;
+    width: 100%;
+    height: 500px;
     border: 1px solid #6f2bce;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -50,12 +50,17 @@ const ProjectWrapper = styled.div`
     }
   }
   h2 {
-    font-size: 18px;
+    font-size: 32px;
     margin: 13px 0;
     color: #6f2bce;
     font-weight: 900;
-
+    border-bottom: 2px solid #6f2bce;
+    display: inline-block;
     text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
   }
 
   display: flex;
@@ -123,6 +128,9 @@ const ProjectWrapper = styled.div`
   }
 
   @media (max-width: 768px) {
+    .image-container{
+      height: 300px !important;
+    }
     .project-info {
       width: 100%;
       h1.title {
@@ -147,7 +155,7 @@ const ProjectWrapper = styled.div`
   @media (max-width: 570px) {
     .image-container{
       width: 100%;
-      height: 350px;
+      height: 350px !important;
     }
     h2{
       font-size: 1.5rem;

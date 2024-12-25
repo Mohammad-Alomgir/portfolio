@@ -56,6 +56,32 @@
      ]
   },
   {
+    "id": 3,
+    "img": "/assets/images/afDigital.png",
+    "title": "SMMA",
+    "category": "website",
+     "websites": [
+      { "id": 1,
+        "title": "AF - Digital",
+        "img": "/assets/images/afDigital.png",
+        "liveLink": "https://af-digital.wuaze.com"
+      }
+     ]
+  },
+  {
+    "id": 2,
+    "img": "/assets/images/ecommerce1.png",
+    "title": "Ecommerce",
+    "category": "website",
+     "websites": [
+      { "id": 1,
+        "title": "",
+        "img": "/assets/images/construction.jpg",
+        "liveLink": "https://alomgironlinestore.netlify.app"
+      }
+     ]
+  },
+  {
     "id": 4,
     "category": "emailsignature",
     "emailSignatures": [
