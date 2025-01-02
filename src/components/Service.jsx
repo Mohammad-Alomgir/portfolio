@@ -95,11 +95,13 @@ const ServiceWrapper = styled.div`
   }
   @media (max-width: 768px) {
     flex-direction: column;
+    align-items: flex-start !important;
     gap: 1rem;
     .icon {
       max-width: 50%;
     }
     .service-body {
+      width: 100% !important;
       gap: 1rem;
       h2 {
         font-size: 17px;
@@ -115,12 +117,14 @@ const ServiceWrapper = styled.div`
   }
   @media (max-width: 930px) {
     /* align-items: flex-start; */
-    padding: 2rem 0 2rem 1rem !important;
+    align-items: flex-start !important;
+    padding: 0;
     .icon {
       max-width: 100%;
       /* align-self: center; */
     }
     .service-body {
+      width: 100% !important;
       h2 {
         font-size: 17px;
       }

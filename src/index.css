@@ -359,7 +359,26 @@ a.signatureImage:hover .findMeHere {
     margin-top: 22px;
     text-align: center;
   }
-
+/* email signature class */
+  .for-email-signatures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3px;
+  }
+  .projects-cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    justify-items: center;
+    align-content: space-between;
+}
+@media (max-width: 530px){
+    .projects-cards{
+        grid-template-columns: 1fr !important;
+    }
+}
 
 @-webkit-keyframes move-chevron {
     25% {

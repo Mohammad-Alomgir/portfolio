@@ -18,7 +18,7 @@ const AllProject = () => {
           <button
             onClick={() => navigate("/")}
             className="themeButton"
-            style={{ display: "inline-block" }}
+            style={{ display: "inline-block",marginBottom: "20px" }}
           >
             <span
               style={{
@@ -31,29 +31,47 @@ const AllProject = () => {
               <IoIosArrowRoundBack style={{ fontSize: "2rem" }} /> Back
             </span>{" "}
           </button>
-          <div className="projects-cards">
-            {location &&
-              location.state.map((project, index) =>
-                project.category === "emailsignature" ? (
-                  project.emailSignatures.map((emailSignature, sigIndex) => (
-                    <SignatureContainer
-                      key={sigIndex}
-                      img={emailSignature.img}
-                      className={emailSignature.className}
-                    />
-                  ))
-                ) : (
-                  <div key={index} className="projects-cards">
-                    <Project
-                      img={project.img}
-                      title={project.title}
-                      path="/websitecategory"
-                      websites={project.websites}
-                    />
-                  </div>
-                )
-              )}
-          </div>
+          <div>
+  {/* Helper Functions to Filter Projects */}
+  {location && (
+    <>
+     {/* Projects Section */}
+     <div className="projects-cards">
+        {location.state
+          .filter((project) => project.category !== "emailsignature")
+          .map((project, index) => (
+            <div key={index}>
+              <Project
+                img={project.img}
+                title={project.title}
+                path="/websitecategory"
+                websites={project.websites}
+              />
+            </div>
+          ))}
+      </div>
+      {/* Email Signatures Section */}
+      {location.state.some((project) => project.category === "emailsignature") && (
+        <div className="for-email-signatures">
+          {location.state
+            .filter((project) => project.category === "emailsignature")
+            .flatMap((project) =>
+              project.emailSignatures.map((emailSignature, sigIndex) => (
+                <SignatureContainer
+                  key={sigIndex}
+                  img={emailSignature.img}
+                  className={emailSignature.className}
+                />
+              ))
+            )}
+        </div>
+      )}
+
+     
+    </>
+  )}
+</div>
+
         </div>
       </AllProjectWrapper>
     </>
@@ -92,26 +110,25 @@ const AllProjectWrapper = styled.div`
   @media (max-width: 430px) {
     padding: 6rem 1rem 1rem 1rem;
     .project-field {
-    padding-top: 3rem;
-    margin: 0 auto;
-    max-width: 1100px;
-    display: block;
-    
+      padding-top: 3rem;
+      margin: 0 auto;
+      max-width: 1100px;
+      display: block;
 
-    /* Project components will span the full width */
+      /* Project components will span the full width */
 
-    .project-item {
-      grid-column: 1 / -1;
-      margin-bottom: 4rem;
+      .project-item {
+        grid-column: 1 / -1;
+        margin-bottom: 4rem;
+      }
+
+      /* Signature components will take up 1/3 of the row */
+      .signature-item {
+        width: 100%;
+        object-fit: cover;
+        gap: 3px;
+      }
     }
-
-    /* Signature components will take up 1/3 of the row */
-    .signature-item {
-      width: 100%;
-      object-fit: cover;
-      gap: 3px;
-    }
-  }
   }
 `;
 
