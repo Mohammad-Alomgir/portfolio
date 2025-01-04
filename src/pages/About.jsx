@@ -1,4 +1,4 @@
-import {useEffect} from "react";
+import { useEffect } from "react";
 import Button from "../components/Button";
 import styled from "styled-components";
 // import AOS from "aos";
@@ -14,7 +14,7 @@ const About = () => {
   return (
     <AboutWrapper id="about">
       <div className="container about-container">
-        <img 
+        <img
           loading="lazy"
           src="/assets/images/lightVectorBg.svg"
           className="about-vector"
@@ -33,12 +33,38 @@ const About = () => {
               communication, timely updates, and a commitment to your project's
               success, let's collaborate to develop your front end website.
             </p>
-            <Button>Discover more about me</Button>
+            <div className="about-cta-section" style={{display: "flex",alignItems: "center"}}>
+              <Button className="hero-btn aboutbtn">
+                <a href="#Contact">GET Started</a>
+              </Button>
+              <div className="about-social-blank">
+                <div className="social-icons">
+                  <a
+                    href="https://www.linkedin.com/in/mohammad-alomgir"
+                    target="_blank"
+                  >
+                    <img src="/assets/images/linkdin.png" alt="linkdin" />
+                  </a>
+                  <a
+                    href="https://github.com/Mohammad-Alomgir?tab=repositories"
+                    target="_blank"
+                  >
+                    <img src="/assets/images/whatsapp.png" alt="github" />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/alomgirhassanwd/"
+                    target="_blank"
+                  >
+                    <img src="/assets/images/instagram.png" alt="instagram" />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="about-image-section " data-aos="fade-left">
             <div className="image-wrapper">
               <img
-               loading="lazy"
+                loading="lazy"
                 className="about-img"
                 src="/assets/images/heroImage2.png"
                 alt=""

@@ -31,14 +31,6 @@
         "title": "Dental Solution",
         "img": "/assets/images/dental.png",
         "liveLink": "https://dentalinbangladesh.netlify.app"
-
-      },
-      {
-        "id": 4,
-        "title": "Retail & Wholesale",
-        "img": "/assets/images/wholesale business.png",
-        "liveLink": "https://abcamazon.com"
-
       }
      ]
   },
@@ -49,8 +41,8 @@
     "category": "website",
      "websites": [
       { "id": 1,
-        "title": "",
-        "img": "/assets/images/construction.jpg",
+        "title": "Tree Planet",
+        "img": "/assets/images/ecommerce1.png",
         "liveLink": "https://alomgironlinestore.netlify.app"
       }
      ]
@@ -58,57 +50,41 @@
   {
     "id": 3,
     "img": "/assets/images/afDigital.png",
-    "title": "SMMA",
+    "title": "AGENCY",
     "category": "website",
      "websites": [
       { "id": 1,
-        "title": "AF - Digital",
+        "title": "AF-Digital Agency",
         "img": "/assets/images/afDigital.png",
-        "liveLink": "https://af-digital.wuaze.com"
+        "liveLink": "http://af-digital.wuaze.com"
+      },
+      { "id": 2,
+        "title": "iLander Landing page",
+        "img": "/assets/images/ilanderLandingpage.png",
+        "liveLink": "http://tutorialic.wuaze.com"
+      },
+      { "id": 3,
+        "title": "Digitalio Agency",
+        "img": "/assets/images/digitalioAgencyWebsite.png",
+        "liveLink": "http://digitalio.wuaze.com"
       }
      ]
   },
   {
     "id": 4,
-    "img": "/assets/images/ecommerce1.png",
-    "title": "Ecommerce",
+    "img": "/assets/images/wholesale business.png",
+    "title": "Retail & Wholesale",
     "category": "website",
      "websites": [
       { "id": 1,
-        "title": "",
-        "img": "/assets/images/construction.jpg",
-        "liveLink": "https://alomgironlinestore.netlify.app"
+        "title": "Amazon Wholesale",
+        "img": "/assets/images/wholesale business.png",
+        "liveLink": "http://abcamazon.com"
       }
      ]
   },
   {
     "id": 5,
-    "img": "/assets/images/ecommerce1.png",
-    "title": "Ecommerce",
-    "category": "website",
-     "websites": [
-      { "id": 1,
-        "title": "",
-        "img": "/assets/images/construction.jpg",
-        "liveLink": "https://alomgironlinestore.netlify.app"
-      }
-     ]
-  },
-  {
-    "id": 6,
-    "img": "/assets/images/ecommerce1.png",
-    "title": "Ecommerce",
-    "category": "website",
-     "websites": [
-      { "id": 1,
-        "title": "",
-        "img": "/assets/images/construction.jpg",
-        "liveLink": "https://alomgironlinestore.netlify.app"
-      }
-     ]
-  },
-  {
-    "id": 4,
     "category": "emailsignature",
     "emailSignatures": [
       { "img": "/assets/images/signature1.jpg", "className": "horizontal" },

@@ -31,11 +31,19 @@ const Hero = () => {
               I'm Mohammad Alomgir
             </h1>
             <ExampleComponent className="text-changer" />
+            <div style={{display: "flex",gap: "1rem"}}>
             <Button className="hero-btn">
               <a href="https://drive.google.com/file/d/1RnNCUNrbtYbV-sdRZJ7-LpuJCmD5AmsF/view?usp=sharing">
                 Download CV
               </a>
             </Button>
+            <Button className="hero-btn">
+              <a href="https://www.fiverr.com/users/mohamad_alomgir/">
+                Hire ME
+              </a>
+            </Button>
+            </div>
+           
             <div id="about" className="cevron-container">
               <Cevron />
             </div>
