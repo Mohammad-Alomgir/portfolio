@@ -31,7 +31,7 @@ const Hero = () => {
               I'm Mohammad Alomgir
             </h1>
             <ExampleComponent className="text-changer" />
-            <div style={{display: "flex",gap: "1rem"}}>
+            <div className="button-wrapper">
             <Button className="hero-btn">
               <a href="https://drive.google.com/file/d/1RnNCUNrbtYbV-sdRZJ7-LpuJCmD5AmsF/view?usp=sharing">
                 Download CV
@@ -131,6 +131,10 @@ const HeroWrapper = styled.section`
 
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+        }
+        .button-wrapper{
+          display: flex;
+          gap: 1rem;
         }
       }
       /* .hero-image {
@@ -240,6 +244,15 @@ const HeroWrapper = styled.section`
           span {
             font-size: 20px !important;
           }
+          .button-wrapper{
+          display: flex;
+          flex-direction: column;
+          gap: 10px !important;
+          .hero-btn{
+            margin-top: 0;
+            padding: auto !important;
+          }
+        }
         }
       }
     }

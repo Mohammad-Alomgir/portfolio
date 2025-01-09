@@ -33,7 +33,7 @@ const About = () => {
               communication, timely updates, and a commitment to your project's
               success, let's collaborate to develop your front end website.
             </p>
-            <div className="about-cta-section" style={{display: "flex",alignItems: "center"}}>
+            <div className="about-cta-section">
               <Button className="hero-btn aboutbtn">
                 <a href="#Contact">GET Started</a>
               </Button>
@@ -107,6 +107,13 @@ const AboutWrapper = styled.section`
         p {
           margin-top: 20px;
           margin-bottom: 25px;
+        }
+        .about-cta-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+          
         }
       }
 
@@ -218,6 +225,23 @@ const AboutWrapper = styled.section`
             text-align: justify;
             font-size: 14px;
           }
+          .about-cta-section{
+            display: flex;
+            flex-direction: column !important;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 0 !important;
+            .hero-btn{
+              padding: 10px 30px !important;
+            }
+            .about-social-blank{
+              margin-top: 20px;
+              justify-content: flex-start !important;
+              .social-icons{
+                width: auto !important;
+              }
+            }
+        }
         }
         .about-image-section {
           .image-wrapper {

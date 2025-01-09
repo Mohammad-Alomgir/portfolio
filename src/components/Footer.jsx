@@ -124,33 +124,7 @@ const FooterWrapper = styled.footer`
       }
     }
   }
-  .footer-social-blank {
-    margin: 2rem 0 1rem 0;
-    max-width: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    .social-icons {
-      margin-top: -15px;
-      display: flex;
-      justify-content: center;
-      width: 30%;
-      a {
-        &:not(:first-child) {
-          margin-left: 20px;
-        }
-        img {
-          width: 50px !important;
-          object-fit: cover;
-          background-size: cover;
-          width: 100%;
-          height: 100%;
-        }
-      }
-    }
-  }
   @media (max-width: 570px) {
     .blank {
       height: 20px;
