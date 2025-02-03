@@ -238,7 +238,7 @@ const HeroWrapper = styled.section`
         }
         .hero-body {
           h1 {
-            font-size: 25px !important;
+            font-size: 25px !important; 
             margin-bottom: 5px;
           }
           span {

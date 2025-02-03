@@ -31,6 +31,18 @@
         "title": "Dental Solution",
         "img": "/assets/images/dental.png",
         "liveLink": "https://dentalinbangladesh.netlify.app"
+      },
+      {
+        "id": 5,
+        "title": "MESR Roofing",
+        "img": "/assets/images/mesr.png",
+        "liveLink": "https://mesr.ca/"
+      },
+      {
+        "id": 5,
+        "title": "Bee Cleaner",
+        "img": "/assets/images/bee_cleaning.png",
+        "liveLink": "http://beecleaner.wuaze.com/"
       }
      ]
   },
