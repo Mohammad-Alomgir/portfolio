@@ -40,7 +40,7 @@ const About = () => {
               <div className="about-social-blank">
                 <div className="social-icons">
                   <a
-                    href="https://www.linkedin.com/in/mohammad-alomgir"
+                    href="#"
                     target="_blank"
                   >
                     <img src="/assets/images/linkdin.png" alt="linkdin" />
@@ -52,7 +52,7 @@ const About = () => {
                     <img src="/assets/images/whatsapp.png" alt="github" />
                   </a>
                   <a
-                    href="https://www.instagram.com/alomgirhassanwd/"
+                    href="#"
                     target="_blank"
                   >
                     <img src="/assets/images/instagram.png" alt="instagram" />
@@ -66,7 +66,7 @@ const About = () => {
               <img
                 loading="lazy"
                 className="about-img"
-                src="/assets/images/heroImage2.png"
+                src="/assets/images/profile.jpg"
                 alt=""
                 width="100px"
               />
@@ -133,13 +133,13 @@ const AboutWrapper = styled.section`
           .about-img {
             max-width: 100%;
             display: inline-block;
-            width: 400px;
-            border-radius: 50%;
+            /* width: 400px; */
+            border-radius: 8px;
 
             /* background-image: url("/assets/images/aboutImage.jpg");; */
           }
 
-          &::after {
+          /* &::after {
             position: absolute;
             content: "";
             left: 100%;
@@ -154,10 +154,10 @@ const AboutWrapper = styled.section`
             background-image: url("/assets/images/aboutImage.jpg");
             z-index: -99;
             box-shadow: 0 0 12px 1px purple;
-          }
+          } */
         }
 
-        &::before {
+        /* &::before {
           position: absolute;
           content: "";
           left: 100%;
@@ -170,7 +170,7 @@ const AboutWrapper = styled.section`
           border-radius: 50%;
           background-image: url("/assets/images/CombinedShape.svg");
           z-index: -99;
-        }
+        } */
       }
     }
   }

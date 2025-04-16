@@ -19,11 +19,11 @@ const SignatureContainer = ({ className, img }) => {
       >
         <img data-aos="zoom-in" src={img} alt="card" />
         <div className="findMeHere">
-          <a href="https://www.fiverr.com/users/mohamad_alomgir" target="_blank">
+          <a href="https://www.fiverr.com/users/expert_cms" target="_blank">
             <img src="/assets/images/fiver.png" alt="fiverlogo" />
             <span style={{display: "block"}} className="themeButton">Fiverr</span>
           </a>
-          <a href="https://www.upwork.com/freelancers/~01ff26408e5f6a788c" target="_blank">
+          <a href="#" target="_blank">
             <img src="/assets/images/upwork.png" alt="upworklogo" />
             <span className="themeButton">Upwork</span>
           </a>

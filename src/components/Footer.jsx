@@ -30,13 +30,13 @@ const Footer = () => {
       <div className="footer-social-blank">
         <div className="social-icons">
          
-          <a href="https://www.linkedin.com/in/mohammad-alomgir" target="_blank">
+          <a href="" target="_blank">
             <img src="/assets/images/linkdin.png" alt="linkdin" />
           </a>
           <a href="https://github.com/Mohammad-Alomgir?tab=repositories" target="_blank">
             <img src="/assets/images/github.png" alt="github" />
           </a>
-          <a href="https://www.instagram.com/alomgirhassanwd/" target="_blank">
+          <a href="#" target="_blank">
             <img src="/assets/images/instagram.png" alt="instagram" />
           </a>
         </div>
