@@ -13,8 +13,9 @@ const SignatureContainer = ({ className, img }) => {
   return (
     <>
       <a
-        href="https://www.fiverr.com/mohamad_alomgir/create-clickable-html-email-signature"
+        href="https://www.fiverr.com/expert_cms"
         data-bs-target="blank"
+        target="_blank"
         className={`signatureImage ${className}`}
       >
         <img data-aos="zoom-in" src={img} alt="card" />
@@ -23,10 +24,10 @@ const SignatureContainer = ({ className, img }) => {
             <img src="/assets/images/fiver.png" alt="fiverlogo" />
             <span style={{display: "block"}} className="themeButton">Fiverr</span>
           </a>
-          <a href="#" target="_blank">
+          {/* <a href="#" target="_blank">
             <img src="/assets/images/upwork.png" alt="upworklogo" />
             <span className="themeButton">Upwork</span>
-          </a>
+          </a> */}
         </div>
       </a>
     </>

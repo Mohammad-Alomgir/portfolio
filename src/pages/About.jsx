@@ -26,33 +26,32 @@ const About = () => {
               <span className="element">Let’s get know</span> about me closer
             </h1>
             <p>
-              I'm Alomgir Hassan, a front end developer. I offer expert front
-              end web development services, specializing in HTML, CSS,
-              JavaScript, Bootstrap, React and Tailwind CSS. Building strong
-              client relationships is my top priority. With transparent
-              communication, timely updates, and a commitment to your project's
-              success, let's collaborate to develop your front end website.
+            I'm Alomgir Hassan, a passionate Front-End & WordPress Developer and Social Media Designer.
+I specialize in HTML, CSS, JavaScript, Bootstrap, React, and Tailwind CSS to build modern, responsive websites.
+From custom WordPress themes to pixel-perfect front-end interfaces, I turn ideas into interactive web experiences.
+I also design eye-catching social media content that aligns with your brand.
+Clear communication, on-time delivery, and client satisfaction are always my top priorities
             </p>
             <div className="about-cta-section">
               <Button className="hero-btn aboutbtn">
-                <a href="#Contact">GET Started</a>
+                <a target="_blank" href="https://api.whatsapp.com/send/?phone=8801970165267&text&type=phone_number&app_absent=0">GET Started</a>
               </Button>
               <div className="about-social-blank">
                 <div className="social-icons">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/alomgir-hassan/"
                     target="_blank"
                   >
                     <img src="/assets/images/linkdin.png" alt="linkdin" />
                   </a>
                   <a
-                    href="https://github.com/Mohammad-Alomgir?tab=repositories"
+                    href="https://api.whatsapp.com/send/?phone=8801970165267&text&type=phone_number&app_absent=0"
                     target="_blank"
                   >
                     <img src="/assets/images/whatsapp.png" alt="github" />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/alomgir1.0/"
                     target="_blank"
                   >
                     <img src="/assets/images/instagram.png" alt="instagram" />
@@ -66,7 +65,7 @@ const About = () => {
               <img
                 loading="lazy"
                 className="about-img"
-                src="/assets/images/profile.jpg"
+                src="/assets/images/me.jpg"
                 alt=""
                 width="100px"
               />
@@ -133,7 +132,7 @@ const AboutWrapper = styled.section`
           .about-img {
             max-width: 100%;
             display: inline-block;
-            /* width: 400px; */
+            width: 400px;
             border-radius: 8px;
 
             /* background-image: url("/assets/images/aboutImage.jpg");; */

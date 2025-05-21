@@ -38,7 +38,7 @@ const Hero = () => {
               </a>
             </Button>
             <Button className="hero-btn">
-              <a href="https://www.fiverr.com/users/mohamad_alomgir/">
+              <a href="https://www.fiverr.com/users/expert_cms">
                 Hire ME
               </a>
             </Button>

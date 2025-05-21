@@ -69,5 +69,27 @@
         "descrition": "Delivering top-tier React development services, specializing in creating responsive and high-performance web applications. With a focus on reusable components and optimized performance, I build scalable solutions tailored to your business needs."
       }
     ]
+  },
+  {
+    "img": "assets/images/facebook.png",
+    "title": "Social Media Design",
+    "description": "Creating eye-catching, scroll-stopping social media designs that elevate your brand. From posts to stories, every visual is crafted for engagement and impact. Let your content speak louder with standout design.",
+    "Services": [
+      {
+        "img": "assets/images/facebook.png",
+        "title": "Facebook Design Solutions",
+        "descrition": "Professional Facebook designs including covers, flyers, ads, posts, carousels, and stories.Each design is tailored to boost engagement and align with your brand identity.Make your Facebook presence bold, cohesive, and scroll-stopping."
+      },
+      {
+        "img": "assets/images/instagram.png",
+        "title": "Instagram Design Solutions",
+        "descrition": "Stunning Instagram designs for posts, stories, reels covers, highlights, and ads.Crafted to captivate, boost engagement, and reflect your unique brand vibe.Turn your feed into a powerful visual story that stands out."
+      },
+      {
+        "img": "assets/images/linkdin.png",
+        "title": "Linkedin Design Solutions",
+        "descrition": "Polished LinkedIn designs including banners, post graphics, carousels, ads, and profile visuals.Strategically crafted to enhance your personal brand and boost professional visibility.Make a lasting impression with clean, engaging, and effective LinkedIn content."
+      }
+    ]
   }
 ]

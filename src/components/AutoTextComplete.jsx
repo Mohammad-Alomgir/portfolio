@@ -5,15 +5,13 @@ const ExampleComponent = () => {
     <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
-        'A FRONTEND DEVELOPER',
+        'Wordpress Developer',
         1000, // wait 1s before replacing "Mice" with "Hamsters"
-        'A YOUTUBER',
+        'Front End Developer',
         1000,
-        'A REACT DEVELOPER',
+        'Social Media Designer',
         1000,
         'A EMAIL SIGNATURE EXPERT',
-        1000,
-        'Wordpress developer',
         1000,
         'Elementor expert',
         1000,

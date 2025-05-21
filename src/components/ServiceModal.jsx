@@ -18,7 +18,7 @@ const ServiceModal = ({ service, onClose }) => {
 
 const ModalWrapper = styled.div`
   position: fixed;
-  top: 8%;
+  top: 16%;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 999;  // Reduced z-index to a more reasonable value
@@ -35,6 +35,8 @@ const ModalWrapper = styled.div`
     img {
       max-width: 100%;  // Ensure image scales properly on smaller devices
       height: auto;
+      width: 300px;
+      height: 300px;
     }
 
     h2 {

@@ -62,15 +62,7 @@ const Nav = ({ setHambleBur }) => {
         )}
       </li>
       
-      <li>
-        {isHomePage ? (
-          <ScrollLink to="blog" smooth={true} duration={100}>
-            Blog
-          </ScrollLink>
-        ) : (
-          <RouterLink to="/#blog">Blog</RouterLink>
-        )}
-      </li>
+    
 
       <li>
         {isHomePage ? (

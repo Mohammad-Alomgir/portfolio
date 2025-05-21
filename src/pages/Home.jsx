@@ -15,7 +15,7 @@ const Home = () => {
       <About />
       <Skills />
       <Work showAllProjects={true} projectNumber="5" numberOfEmailSignature="4"/>
-      <Blog />
+      {/* <Blog /> */}
       <Testimonials />
       <Contact />
     </>

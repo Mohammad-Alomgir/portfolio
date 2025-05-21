@@ -170,7 +170,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <ToastContainer />
+      <ToastContainer 
+      style={{ zIndex: 99999999}}
+      />
     </ContactWrapper>
   );
 };

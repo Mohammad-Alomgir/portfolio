@@ -30,13 +30,13 @@ const Footer = () => {
       <div className="footer-social-blank">
         <div className="social-icons">
          
-          <a href="" target="_blank">
+          <a href="https://www.linkedin.com/in/alomgir-hassan" target="_blank">
             <img src="/assets/images/linkdin.png" alt="linkdin" />
           </a>
-          <a href="https://github.com/Mohammad-Alomgir?tab=repositories" target="_blank">
-            <img src="/assets/images/github.png" alt="github" />
+          <a href="https://fiverr.com/expert_cms/" target="_blank">
+            <img src="/assets/images/3dfiverricon.png" alt="github" />
           </a>
-          <a href="#" target="_blank">
+          <a href="https://www.instagram.com/alomgirhassan74/" target="_blank">
             <img src="/assets/images/instagram.png" alt="instagram" />
           </a>
         </div>
@@ -45,7 +45,7 @@ const Footer = () => {
         className="copyrightText"
         style={{ textAlign: "center", marginTop: "-15px;" }}
       >
-        &copy; copyright alomgir » 2024{" "}
+        &copy; copyright alomgir » 2024-25{" "}
       </p>
     </FooterWrapper>
   );
